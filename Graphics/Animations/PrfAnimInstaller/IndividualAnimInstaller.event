@@ -24,14 +24,14 @@ POIN CustomAnimeTable
 
 
 CustomAnimeTable:
-BYTE 0x05  //Ted
+BYTE 0x0A  //Ted
 BYTE 0x1F  //Wyvern Rider
 BYTE 0x00  //dummy
 BYTE 0x00  //dummy
 POIN TedAnim // REF ID
 
-BYTE 0x08  //Mae
-BYTE 0x1C  //Sniper
+BYTE 0x0B  //Zelos
+BYTE 0x29  //Mage Knight
 BYTE 0x00  //dummy
 BYTE 0x00  //dummy
-POIN MaeAnim // REF ID
+POIN ZelosAnim // REF ID

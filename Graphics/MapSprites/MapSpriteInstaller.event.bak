@@ -3,13 +3,13 @@ CommanderStand:
 CommanderMove:
 #incext Png2Dmp "_Commander/CommanderMove.png" --lz77
 PriestessStand:
-#incext Png2Dmp "Priestess/PriestessStand.png" --lz77
+#incext Png2Dmp "_Livvy/PriestessStand.png" --lz77
 PriestessMove:
-#incext Png2Dmp "Priestess/PriestessMove.png" --lz77
+#incext Png2Dmp "_Livvy/PriestessMove.png" --lz77
 FreelancerStand:
-#incext Png2Dmp "_MVP/TACT.png"
+#incext Png2Dmp "_MVP/TACT.png" --lz77
 FreelancerMove:
-#incext Png2DMP "_MVP/TACTM.png"
+#incext Png2DMP "_MVP/TACTM.png" --lz77
 TacticianStand:
 #incext Png2Dmp "_Tactician/TacticianStand.png" --lz77
 TacticianMove:
@@ -166,7 +166,10 @@ ObsStand:
 #incext Png2Dmp "_Obs/Stand.png" --lz77
 ObsMove:
 #incext Png2Dmp "_Obs/Move.png" --lz77
-
+LegendStand:
+#incext Png2Dmp "_Devvy/Stand.png" --lz77
+LegendMove:
+#incext Png2Dmp "_Devvy/Move.png" --lz77
 
 
 
