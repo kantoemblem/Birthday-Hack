@@ -1,0 +1,222 @@
+## CommanderName
+Commander[X]
+
+## CommanderDesc
+A sword fighter whose armor choice[NL]
+is as bizarre as his fighting style.[X]
+
+## PriestessName
+Priestess[X]
+
+## PriestessDesc
+Holy maidens who use swords, magic,[N]
+and staves to protect their allies.[X]
+
+
+## TacticianName
+Tactician[X]
+
+## TacticianDesc
+A tactician-in-training who wields[NL]
+potent anima magic.[X]
+
+## AcolyteName
+Acolyte[X]
+
+## AcolyteDesc
+An adept capable of wielding light[NL]
+and dark spells.[X]
+
+## FreelancerName
+Freelancer[X]
+
+## FreelancerDesc
+An un-fettered soldier, learned[N]
+in various styles of combat.[X]
+
+## LegendName
+Legend[X]
+
+## LegendDesc
+A title for one whose sword[N]
+leaves a mark on history.[X]
+
+## EclipseKnightName ^
+Eclipse Knight[X]
+
+## EclipseKnightDesc
+_[X]
+
+
+
+## CavalierDesc
+Horseback knights who wield swords[NL]
+and lances in combat. A well[NL]
+balanced class.[X]
+
+## PaladinDesc
+An experienced and dignified knight,[NL]
+possessing high mobility and defenses.[X]
+
+## KnightDesc
+Knights encased in heavy armour. Has[NL]
+high defence, but is weak against magic.[X]
+
+## GeneralDesc
+Armoured knights who possess[NL]
+overpowering defence and offence.[NL]
+Can wield swords, axes, and lances.[X]
+
+## ThiefDesc
+An underworld dweller who lives off[NL]
+thievery. Weak at fighting, but good[NL]
+at picking locks.[X]
+
+## MercDesc
+Professional sword-wielders with[NL]
+excellent abilities all around.[X]
+
+## HeroDesc
+Battle-hardened warriors who possess[NL]
+exceptional skill.[NL]
+Can wield axes in addition to swords.[X]
+
+## SupplierName
+Supplier[X]
+
+## SupplierDesc
+A merchant who travels across the[NL]
+lands peddling their wares. possesses low[NL]
+offense, but high mobility and defense.[X]
+
+## MyrmDesc
+Warriors who specialise in the blade.[NL]
+They overcome enemies with[NL]
+their swift movements.[X]
+
+## SwordmasterDesc
+A sword expert who has reached the[NL]
+pinnacle of swordsmanship.[NL]
+Has high skill and speed.[X]
+
+## AssassinDesc
+An assassin who lives in the shadows.[NL]
+Can wield bows in addition to swords.[X]
+
+## RogueDesc
+A glamorous and elusive phantom thief.[NL]
+Wields staves in addition to swords.[X]
+
+## ArcherDesc
+Bow-fighters who attack from a short[NL]
+distance away.[X]
+
+## SniperDesc
+An expert bowman who has mastered[NL]
+the bow. Possesses exceptional skill.[X]
+
+## RangerDesc
+An archer knight who rains arrows while[NL]
+riding on horseback.[NL]
+Can wield both swords and bows.[X]
+
+## WyvernRDesc
+Knights who soar the skies astride a[NL]
+wyvern. Vulnerable only to bows[NL]
+and magic.[X]
+
+## WyvernLDesc
+Knights who pride their wyvern-riding[NL]
+abilities. Boasts high defense and
+mobility.[X]
+
+## MageDesc
+Magic tome wielders who fare[NL]
+well against armoured foes.[X]
+
+## SageDesc
+A powerful magician who wields mighty[NL]
+magic. Can wield staves in[NL]
+addition to magic.[X]
+
+## MKDesc
+A spell-casting knight who rides a[NL]
+horse. Can wield swords in[NL]
+addition to magic.[X]
+
+## ShamanDesc
+A wielder of dark magic.[NL]
+Sturdy, boasting high defence.[X]
+
+## DruidDesc
+A warlock who wields potent dark magic.[NL]
+Possesses terrifying magical power.[X]
+
+## MonkDesc
+Skillful missionaries who wield light magic.[NL]
+High resistance makes them impervious[NL]
+to magical assault.[X]
+
+## PriestDesc
+Healers who aid allies with their[NL]
+healing staves. Cannot fight.[X]
+
+## BishopDesc
+A holy worker who wields staves as well[NL]
+as potent light magic.[X]
+
+## GKDesc
+An experienced and dignified knight,[NL]
+possessing high mobility and defense.[X]
+
+## FighterDesc
+Savages who fight with axes and dish[NL]
+out mighty blows with their high strength.[X]
+
+## WarriorDesc
+A fighter whose might is second to none.[NL]
+Can wield bows in addition to axes.[X]
+
+## BrigandDesc
+Fiends who raid and destroy villages.[NL]
+Has high strength and speed, but[NL]
+low defence.[X]
+
+## PirateDesc
+Deft Sailors that control the seas with[NL]
+their immense power and skill.[X]
+
+## BerserkerDesc
+A mighty barbarian who has mastered[NL]
+the axe and deals devastating attacks.[X]
+
+## PegasusDesc
+Knights who soar the skies astride a[NL]
+pegasus. Strong against magic,[NL]
+but weak against bows.[X]
+
+## FalconDesc
+Knights who control falcons with great[NL]
+mastery. Can wield swords, and[NL]
+staves in addition to lances.[X]
+
+## TroubDesc
+Mounted healers who possess[NL]
+high mobility, but cannot fight.[X]
+
+## ValkDesc
+A battle maiden who rides a horse[NL]
+into combat. Can wield[NL]
+magic in addition to staves.[X]
+
+## LancerName
+Lancer[X]
+
+## LancerDesc
+Those who follow the path[N]
+of the spear.[X]
+
+## SummonerDesc
+Master sorcerors capable of[N]
+summoning phantoms to do[N]
+their bidding.[X]

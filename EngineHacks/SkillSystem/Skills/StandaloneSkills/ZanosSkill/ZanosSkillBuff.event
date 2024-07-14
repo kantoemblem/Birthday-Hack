@@ -1,0 +1,10 @@
+ALIGN 4 
+ZanosPersonalDefense: 
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x0 // spd
+BYTE 0x1 // def
+BYTE 0x0 // res
+BYTE 0x0 // lck
+BYTE 0x0 // mov

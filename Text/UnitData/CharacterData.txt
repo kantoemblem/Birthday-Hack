@@ -1,0 +1,147 @@
+## BenName
+Ben[X]
+
+## LivName
+Livvy[X]
+
+## ZanosName
+Zanos[X]
+
+## OstName
+Ostrava[X]
+
+## MimiName
+Mimi[X]
+
+## AubName
+Aubrey[X]
+
+## ZoName
+Zo[X]
+
+## MVPName
+MVP[X]
+
+## PretName
+Pretsel[X]
+
+## TedName
+Ted[X]
+
+## ZelosName
+Zelos[X]
+
+## TiaName
+Tia[X]
+
+## RoseName
+Rose[X]
+
+## SarahName
+Sarah[X]
+
+## HexName
+Hex[X]
+
+## DevvyName
+Devvy[X]
+
+## NakName
+Nak[X]
+
+## ObsName
+Obs[X]
+
+## TarteName
+Tarte[X]
+
+## GermaineName
+Germaine[X]
+
+## PerkusName
+Perkus[X]
+
+
+## BenDesc
+A bombastic swordsman who goes[N]
+by the name [OpenQuote]Bringer of Chaos!"[N]
+Leads Ben and Zo's Mercenary Co.[X]
+
+## LivDesc
+A doctor who studies shapeshifting[N]
+magic. Cheeky and enthusiastic.[X]
+
+## ZanosDesc
+A self-deprecating vagabond, they[N]
+aspire to better themselves.[X]
+
+## OstDesc
+A Wayward fighter of no renown.[N]
+Witty and outspoken.[X]
+
+## MimiDesc
+A friendly cloth creature. Once a[N]
+human child, now given new life via[N]
+ancient ritual and familial love.[X]
+
+## AubDesc
+Woah that's Aubrey[X]
+
+## ZoDesc
+Co-founder of Ben and Zo's[NL]
+Mercenary Co. Anxious, but dedicated.[X]
+
+## MVPDesc
+An enigmatic fighter who fights for[N]
+what he believes in.[X]
+
+## PretDesc
+The tactician of the Lopto's Boyos.[N]
+Has mastered the art of cloning magic.[X]
+
+## TedDesc
+A nonchalant wyvern breeder with a[N]
+unique sense of humour. A dedicated[N]
+member, and co-founder, of the company.[X]
+
+## ZelosDesc
+The Red Mage of the Lopto's Boyos.[N]
+Overwhelmingly powerful and cunning.[X]
+
+## TiaDesc
+A priestess and vassal to the empire.[N]
+She's friendly with a flirtatious streak.[X]
+
+## RoseDesc
+A wandering mercenary currently in Ben's[N]
+employ. Sharp tongued, but kind.[X]
+
+## SarahDesc
+The mighty, caffeine-fueled[N]
+commander of the Imperial Legion.[X]
+
+## HexDesc
+A grizzled yet kind war hero. Equal[N]
+parts sarcastic and motherly.[X]
+
+## DevvyDesc
+A swordsman who is sussy amongus!!!![N]
+:scream::scream: diescore[X]
+
+## NakDesc
+A rather lax Nothric lord.[N]
+They're fun-loving, but quiet.[X]
+
+## ObsDesc
+The 15th King of Fighters[X]
+
+## TarteDesc
+The greatest villain to
+ever live![X]
+
+## GermaineDesc
+An Ambitious nobleman[N]
+with an unceasing determination.[X]
+
+## PerkusDesc
+Registered Sex-offender.[X]

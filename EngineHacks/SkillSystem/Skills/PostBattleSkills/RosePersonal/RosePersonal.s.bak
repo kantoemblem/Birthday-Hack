@@ -1,0 +1,77 @@
+.equ GetUnitsInRange, SkillTester+4
+.equ RosePersonalID, GetUnitsInRange+4
+.thumb
+push {r4-r7,lr}
+@goes in the battle loop.
+@r0 is the attacker
+@r1 is the defender
+mov r4, r0
+mov r5, r1
+
+CheckSkill:
+@now check for the skill
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker
+ldr r1, RosePersonalID
+.short 0xf800
+cmp r0, #0
+beq Done
+
+@Check if there are allies in 2 spaces
+ldr r0, GetUnitsInRange
+mov lr, r0
+mov r0, r4 @attacker
+mov r1, #0 @allies
+mov r2, #2 @range
+.short 0xf800
+cmp r0, #0
+bne Done
+
+@check if waited
+ldrb  r0, [r6,#0x11]  @action taken this turn
+cmp r0, #0x1
+ble Done
+
+@check if moved all the squares
+ldr	r0,=#0x8019224	@mov getter
+mov	lr, r0
+mov	r0, r4		@attacker
+.short	0xF800
+ldrb 	r1, [r6,#0x10]	@squares moved this turn
+cmp	r0,r1
+beq	Done
+
+blh 0x801A1F5 @first refresh the entity map
+ldr	r1,=#0x8018BD8	@check if can move again
+mov	lr, r1
+.short	0xF800
+lsl	r0, #0x18
+cmp	r0, #0x00
+beq	Done
+
+@check if already cantoing, and is not in a ballista
+ldr	r0, [r4,#0x0C]	@status bitfield
+mov	r1, #0x21
+lsl	r1, #0x06 	@has moved already and is in a ballista
+and	r0, r1
+cmp	r0, #0x00
+bne	Done
+
+mov r0, r4 @ unit 
+add r0, #0x41 
+ldrb r0, [r0] 
+mov r1, #0x20 
+tst r0, r1 
+bne Done @ do not canto if cannot move 
+
+Done:
+pop {r4-r7}
+pop {r0}
+bx r0
+.align
+.ltorg
+SkillTester:
+@ POIN SkillTester
+@ POIN GetUnitsInRange
+@ WORD RosePersonalID

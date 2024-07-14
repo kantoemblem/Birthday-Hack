@@ -1,0 +1,301 @@
+ALIGN 4
+BenSkills:
+BYTE 5  StrongRiposteID
+BYTE 10 InfiltratorID
+BYTE 00 00
+ALIGN 4
+
+LivSkills:
+BYTE 5 CantoID
+BYTE 10 DazzleID 117
+BYTE 00 00
+ALIGN 4
+
+AphiSkills:
+BYTE 5 GrislyWoundID
+BYTE 10 AdeptID
+BYTE 255 MasteryID
+BYTE 00 00
+ALIGN 4
+
+ZoSkills:
+BYTE 5 DraconicHexID
+BYTE 10 CantoPlusID
+BYTE 00 00
+ALIGN 4
+
+TedSkills:
+BYTE 5 PassID
+BYTE 10 SwordbreakerID
+BYTE 00 00
+ALIGN 4
+
+HexSkills:
+BYTE 25 TrampleID
+BYTE 30 SturdyStanceID
+BYTE 00 00
+ALIGN 4
+
+NateSkills:
+BYTE 5 HeroesDeathBlowID
+BYTE 10 KillingMachineID
+BYTE 00 00
+ALIGN 4
+
+MaeSkills:
+BYTE 25 RouseStrID
+BYTE 30 Galeforce
+BYTE 00 00
+ALIGN 4
+
+OstravaSkills:
+BYTE 5 SteadyStanceID
+BYTE 10 CamaraderieID
+BYTE 00 00
+ALIGN 4
+
+NanaSkills:
+BYTE 5 SteadyStanceID
+BYTE 10 WaryFighterID
+BYTE 00 00
+ALIGN 4
+
+MimiSkills:
+BYTE 5 VantageID
+BYTE 10 DefiantAvoID
+BYTE 00 00
+ALIGN 4
+
+RoseSkills:
+BYTE 5 QuickDrawID
+BYTE 10 CelerityID
+BYTE 00 00
+ALIGN 4
+
+ZanosSkills:
+BYTE 5 AmaterasuID
+BYTE 10 StaffSavantID
+BYTE 00 00
+ALIGN 4
+
+SonuSkills:
+BYTE 5 AcrobatID
+BYTE 10 StealPlusID
+BYTE 00 00
+ALIGN 4
+
+//Stuff that was here when I started that I dont Want to touch
+ALIGN 4 
+
+EphraimLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+EirikaLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+EphraimGreatLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+EirikaGreatLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+CavalierSkillList:
+BYTE 00 00
+
+PaladinSkillList:
+BYTE 00 00
+ALIGN 4
+
+KnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+GeneralSkillList:
+BYTE 00 00
+ALIGN 4
+
+ThiefSkillList:
+BYTE 1 StealID
+BYTE 00 00
+ALIGN 4
+
+MercenarySkillList:
+BYTE 00 00
+ALIGN 4
+
+HeroSkillList:
+BYTE 00 00
+ALIGN 4
+
+MyrmidonSkillList:
+BYTE 00 00
+ALIGN 4
+
+SwordmasterSkillList:
+BYTE 00 00
+ALIGN 4
+
+AssassinSkillList:
+BYTE 255 StealID
+BYTE 1 LethalityID
+BYTE 00 00
+ALIGN 4
+
+ArcherSkillList:
+BYTE 00 00
+ALIGN 4
+
+SniperSkillList:
+BYTE 00 00
+ALIGN 4
+
+RangerSkillList:
+BYTE 00 00
+ALIGN 4
+
+WyvernRiderSkillList:
+BYTE 00 00
+ALIGN 4
+
+WyvernLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+WyvernKnightSkillList:
+BYTE 1 LunaID
+BYTE 00 00
+ALIGN 4
+
+MageSkillList:
+BYTE 00 00
+ALIGN 4
+
+SageSkillList:
+BYTE 00 00
+ALIGN 4
+
+MageKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+BishopSkillList:
+BYTE 00 00
+ALIGN 4
+
+ShamanSkillList:
+BYTE 00 00
+ALIGN 4
+
+DruidSkillList:
+BYTE 00 00
+ALIGN 4
+
+SummonerSkillList:
+BYTE 00 00
+ALIGN 4
+
+RogueSkillList:
+BYTE 255 StealID
+BYTE 1 LocktouchID
+BYTE 00 00
+ALIGN 4
+
+GreatKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+ManaketeFSkillList:
+BYTE 00 00
+ALIGN 4
+
+FighterSkillList:
+BYTE 00 00
+ALIGN 4
+
+WarriorSkillList:
+BYTE 00 00
+ALIGN 4
+
+BrigandSkillList:
+BYTE 00 00
+ALIGN 4
+
+PirateSkillList:
+BYTE 00 00
+ALIGN 4
+
+BerserkerSkillList:
+BYTE 00 00
+ALIGN 4
+
+MonkSkillList:
+BYTE 00 00
+ALIGN 4
+
+PriestSkillList:
+BYTE 00 00
+ALIGN 4
+
+PegKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+FalcoknightSkillList:
+BYTE 00 00
+ALIGN 4
+
+ClericSkillList:
+BYTE 00 00
+ALIGN 4
+
+TroubadourSkillList:
+BYTE 00 00
+ALIGN 4
+
+ValkyrieSkillList:
+BYTE 00 00
+ALIGN 4
+
+DancerSkillList:
+BYTE 00 00
+ALIGN 4
+
+SoldierSkillList:
+BYTE 00 00
+ALIGN 4
+
+NecromancerSkillList:
+BYTE 00 00
+ALIGN 4
+
+FleetSkillList:
+BYTE 00 00
+ALIGN 4
+
+PhantomSkillList:
+BYTE 00 00
+ALIGN 4
+
+SuperJourneymanSkillList:
+BYTE 00 00
+ALIGN 4
+
+SuperPupilSkillList:
+BYTE 00 00
+ALIGN 4
+
+SuperRecruitSkillList:
+BYTE 00 00
+ALIGN 4
+
+ManaketeMSkillList:
+BYTE 00 00
+ALIGN 4
+
+DemonKingSkillList:
+BYTE 00 00
+ALIGN 4

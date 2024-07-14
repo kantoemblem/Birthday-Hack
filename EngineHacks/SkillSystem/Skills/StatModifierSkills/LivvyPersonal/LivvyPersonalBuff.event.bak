@@ -1,0 +1,76 @@
+ALIGN 4 
+LivvyMovBuff: 
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x0 // spd
+BYTE 0x0 // def
+BYTE 0x0 // res
+BYTE 0x0 // lck
+BYTE 0x1 // mov
+
+ALIGN 4
+LivvyStrBuff:
+BYTE 0x4 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x0 // spd
+BYTE 0x0 // def
+BYTE 0x0 // res
+BYTE 0x0 // lck
+BYTE 0x0 // mov
+
+ALIGN 4
+LivvySklBuff:
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x4 // skl
+BYTE 0x0 // spd
+BYTE 0x0 // def
+BYTE 0x0 // res
+BYTE 0x0 // lck
+BYTE 0x0 // mov
+
+ALIGN 4
+LivvySpdBuff:
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x4 // spd
+BYTE 0x0 // def
+BYTE 0x0 // res
+BYTE 0x0 // lck
+BYTE 0x0 // mov
+
+ALIGN 4
+LivvyDefBuff:
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x0 // spd
+BYTE 0x4 // def
+BYTE 0x0 // res
+BYTE 0x0 // lck
+BYTE 0x0 // mov
+
+ALIGN 4
+LivvyResBuff:
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x0 // spd
+BYTE 0x0 // def
+BYTE 0x4 // res
+BYTE 0x0 // lck
+BYTE 0x0 // mov
+
+ALIGN 4
+LivvyLuckBuff:
+BYTE 0x0 // str
+BYTE 0x0 // mag
+BYTE 0x0 // skl
+BYTE 0x0 // spd
+BYTE 0x0 // def
+BYTE 0x0 // res
+BYTE 0x4 // lck
+BYTE 0x0 // mov

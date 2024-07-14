@@ -1,0 +1,200 @@
+.equ ChromaticTacticsID, AuraSkillCheck+4
+.equ GetUnit, 0x8019431
+.thumb
+push {r4-r7,lr}
+@goes in the battle loop.
+@r0 is the attacker
+@r1 is the defender
+mov r4, r0
+mov r5, r1
+
+@now check for the skill
+ldr r0, AuraSkillCheck
+mov lr, r0
+mov r0, r4 @attacker
+ldr r1, ChromaticTacticsID
+mov r2, #0 @are allies
+mov r3, #2 @range
+.short 0xf800
+cmp r0, #0
+beq EndPortal
+
+@We shouldnt need the loop here if only one unit can have the skill
+
+@Get unit data from unit ID
+ldrb r0,[r1]
+ldr r1, =GetUnit
+mov lr, r1
+.short 0xf800 @r0 = unit data pointer
+
+mov r1, #0x1E @avoid using r0, as it has data we need
+ldrb r0, [r0, r1] @load from address in r0. We can store to r0 after loading since we got all the data we need
+cmp r0, #0x83 @ Truths Pyre
+beq TruthsPyre
+cmp r0, #0x38 @Fire Tome
+beq FireTome
+cmp r0, #0x39 @ThunderTome
+beq ThunderTome
+cmp r0, #0xb6 @ Aircalibur
+beq Aircalibur
+cmp r0, #0x3A @ Elfire
+beq Elfire
+cmp r0, #0x3B @ Bolting
+beq Bolting
+cmp r0, #0x3C @ Fimbulvetr
+beq Fimbulvetr
+cmp r0, #0x3D @ Forblaze
+beq Forblaze
+cmp r0, #0x3E @ Excalibur
+beq Excalibur 
+
+FireTome:
+mov r0, r4
+add     r0,#0x5A    @Move to the attacker's damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#3    @add 2 to the attacker's damage.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x60    @Move to the attacker's Hit
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+ThunderTome:
+mov r0, r4
+add     r0,#0x5C    @Move to the attacker's defense.
+ldrh    r3,[r0]     @Load the attackers defense into r3.
+add     r3,#3    @add 2 to the attacker's defense.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x60    @Move to the attacker's Hit
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+Aircalibur:
+mov r0, r4
+add     r0,#0x5E    @Move to the attacker's attack speed.
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#3    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x62    @Move to the attacker's Hit
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+Elfire:
+mov r0, r4
+add     r0,#0x5A    @Move to the attacker's damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#5    @add 4 to the attacker's damage.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x60    @Move to the attacker's Hit
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#10    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+Bolting:
+mov r0, r4
+add     r0,#0x5C    @Move to the attacker's defense.
+ldrh    r3,[r0]     @Load the attackers defense into r3.
+add     r3,#4    @add 3 to the attacker's defense.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x60    @Move to the attacker's hit.
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#15    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+EndPortal:
+b End
+
+Fimbulvetr:
+mov r0, r4
+add     r0,#0x5C    @Move to the attacker's defense.
+ldrh    r3,[r0]     @Load the attackers defense into r3.
+add     r3,#6    @add 2 to the attacker's defense.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+Forblaze:
+mov r0, r4
+add     r0,#0x5A    @Move to the attacker's damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#10    @add 2 to the attacker's damage.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+Excalibur:
+mov r0, r4
+add     r0,#0x5E    @Move to the attacker's attack speed.
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x62    @Move to the attacker's attack speed.
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#15    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x66    @Move to the attacker's attack speed.
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#15    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+TruthsPyre:
+mov r0, r4
+add     r0,#0x5A    @Move to the attacker's damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#1    @add 2 to the attacker's damage.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x5C    @Move to the attacker's defense.
+ldrh    r3,[r0]     @Load the attackers defense into r3.
+add     r3,#1    @add 2 to the attacker's defense.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x5E    @Move to the attacker's attack speed.
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#1    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x60    @Move to the attacker's Hit
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x62    @Move to the attacker's Avoid
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x66    @Move to the attacker's Crit
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+mov r0, r4
+add     r0,#0x68    @Move to the attacker's Crit Avoid
+ldrh    r3,[r0]     @Load the attackers attack speed into r3.
+add     r3,#5    @add 2 to the attacker's attack speed.
+strh    r3,[r0]     @Store attacker avoid.
+b End
+
+End:
+pop {r4-r7}
+pop {r0}
+bx r0
+.align
+.ltorg
+AuraSkillCheck:
+@ POIN AuraSkillCheck
+@ WORD ChromaticTacticsID
+

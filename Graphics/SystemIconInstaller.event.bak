@@ -1,0 +1,31 @@
+//Map palettes
+PUSH
+ORG 0x59EE20 //Player Map Palette data position
+BYTE $90 $42 $C7 $24 $71 $66 $F7 $72 $2C $25 $34 $32 $BD $63 $A6 $30 $E5 $48 $27 $5D $C2 $7D $17 $14 $9F $23 $EE $31 $BE $77 $A6 $14 //Player Map Palette
+POP 
+
+PUSH
+ORG 0x59EE40 //Enemy Map Palette data position
+BYTE $90 $42 $CA $14 $79 $46 $FC $5E $2C $25 $15 $32 $BD $63 $6B $1C $6F $1C $74 $18 $B8 $08 $C4 $16 $9F $23 $EE $31 $BE $77 $A6 $14 //Enemy Map Palette
+POP 
+
+//Item palette
+PUSH
+ORG 0x5996F4 //Item Palette data position
+BYTE $F8 $67 $FF $7F $19 $5F $52 $42 $A5 $14 $7F $13 $18 $00 $A2 $71 $EE $49 $D6 $6A $E0 $1D $27 $63 $2D $19 $13 $3A $CA $1C $BB $01 //Item Palette
+POP 
+
+//Arrow palette
+PUSH
+ORG 0xA0328C //Arrow palette data position
+BYTE $12 $47 $18 $63 $10 $42 $FF $7F $00 $42 $FA $61 $DE $7E $96 $20 $1E $2D $1F $00 $E0 $03 $FF $03 $00 $7C $1F $7C $E0 $7F $6E $18 //palette data
+POP 
+
+//Battle Preview palette
+PUSH
+ORG 0x5B6BB4 //Battle window palette data position
+BYTE $CC $49 $BD $77 $7C $57 $90 $25 $68 $00 $BB $73 $94 $6F $8B $6A $40 $62 $00 $5E $20 $4D $E0 $48 $A0 $44 $60 $40 $20 $3C $00 $38 //player
+BYTE $CC $49 $BD $77 $7C $57 $90 $25 $68 $00 $9D $73 $7D $6B $3C $63 $FB $5A $BA $4E $15 $00 $16 $00 $11 $00 $0E $00 $0C $00 $0A $00//enemy
+BYTE $0E $52 $BD $77 $7C $57 $90 $25 $68 $00 $BC $73 $BA $6B $92 $4B $60 $43 $40 $3B $80 $1A $40 $12 $00 $0A $A0 $01 $60 $01 $20 $01//ally
+BYTE $CC $49 $BD $77 $7C $57 $90 $25 $68 $00 $9C $6F $B5 $52 $94 $4E $73 $4A $31 $42 $4B $25 $2A $25 $E8 $1C $C7 $18 $85 $10 $64 $0C//fourth
+POP 

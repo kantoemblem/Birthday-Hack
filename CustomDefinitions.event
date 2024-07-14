@@ -1,0 +1,128 @@
+// #define FreeSpace 0xb2a610
+// #define FreeSpaceEnd 0xC00000
+#define FreeSpace 0xFE4000
+#define FreeSpaceEnd 0x2000000
+#define FreeSpaceBLRange 0x1c1ec0
+
+#define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
+#define ChapterTileAnims(chapter, anim1, anim2) "PUSH; ORG 0x8b0890 + (148* chapter) + 9; BYTE anim1 anim2; POP"
+
+#ifndef ItemTable
+  #define ItemTable 0x809B10
+#endif
+
+#ifndef DebuffTableRam
+  #define DebuffTableRam     0x0203F100
+  #define DebuffTableSize 0x00000440
+#endif
+
+#ifndef ChapterDataTable
+  #define ChapterDataTable 0x8B0890
+  #define ChapterDataTableEntSize 148
+#endif
+
+#define LunarBrace MoonBracelet
+#define SolarBrace SunBracelet
+
+//Character Definitions
+#define Ben 0x1
+#define Livvy 0x2
+#define Zanos 0x3
+#define Ostrava 0x4
+#define Ost Ostrava
+#define Mimi 0x5
+#define Aubrey 0x6
+#define Zo 0x7
+#define MVP 0x8
+#define Pret 0x9
+#define Ted 0xA
+#define Zelos 0xB
+#define Sensei Zelos
+#define Tia 0xC
+#define Rose 0xD
+#define Ribsplitter Rose
+#define Sarah 0xE
+#define Hexchamp 0xF
+#define Devvy 0x10
+#define Devvo Devvy
+#define Devisio Devvo
+#define discorduserdevisio Devisio
+#define nak 0x11
+#define naknak nak
+#define nakanaknak naknak
+#define naknaknaknaknaknaknak naknak
+#define Obsidian 0x12
+#define Obs Obsidian
+
+//Class Definitions
+#define Commander 0x1
+#define Priestess
+
+
+
+// Attribute for defining items with passive stat bonuses
+#define PASSIVE_ITEM_BOOSTS_ATTR 0x00800000
+
+// Attribute for defining items with passive skills
+#define PASSIVE_ITEM_SKILL_ATTR 0x00800000
+
+// this is for if you use the legacy way of define item attributes in your table (this is for byte 3)
+#define PassiveBoosts 0x80
+
+#define StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE HPB StrB SklB SpdB DefB ResB LckB MovB ConB MagB 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0"
+
+#define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB 0x0 0x0"
+
+//Graphics definitions
+
+//Class card definition
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+
+//Tileset stuff
+#define TilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#define EventPointerListOffset ExpandedPointerList
+#define EventPointerTable(id,offset) "PUSH; ORG EventPointerListOffset+(4*id); POIN offset; POP"
+
+//Item Icons
+
+#define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
+
+
+//item ID for skill scroll
+#define SkillScroll 0xBC
+
+#include "EngineHacks/SkillSystem/skill_definitions.event"
+
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+//Label Battle Animations
+//#ifndef ClassAnimTable
+//    #define ClassAnimTable (0xc00008-0x20)
+//#endif
+//#define AnimTableEntry(index) "ORG ClassAnimTable - 0x20 + (index * 0x20)"
+
+#define Item 0x9
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
+#define Spears Lances
+#define LanceAnim(Animation) "BYTE Spears 0x1 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE ShortAxe 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Item 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+//Event Definitions
+#define GiveGold(money) "CALL $591F40; SVAL 0x3 money; GIVEITEMTOMAIN 0"
+//Move unit at specified coordinate
+//Credit Pikmin1211
+#define MoveByCoords(speed, srcX, srcY, destX, destY) "SVAL sB srcX|(srcY<<16); MOVE speed UnitAtCoordsSlotB [destX, destY]"
+//Generic always event macro
+#define AlwaysEvent(completionFlag, eventOffset, triggerFlag) "AFEV completionFlag eventOffset triggerFlag"
+#define ClearAll "CLEA 0x0; CLEE 0x0; CLEN 0x0" 
+#define HighlightUnit(unitID,frames) "CUMO unitID; STAL frames; CURE"
+#define HighlightLocation

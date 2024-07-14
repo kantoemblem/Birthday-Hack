@@ -1,0 +1,324 @@
+#include "Tools/Tool Helpers.txt"
+//this file defines the macro:
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+PUSH
+// Fixes weird drawing issue with mugs
+ORG 0x005D20
+    BYTE 5
+POP
+
+//Mugs Go Here
+//Playables
+Ben_Mug:
+#incext PortraitFormatter "Playables/0Ben.png"
+setMugEntry(0x2, Ben_Mug,2,5,3,3)
+
+Livvy_Mug:
+#incext PortraitFormatter "Playables/1Livvy.png"
+setMugEntry(0x3, Livvy_Mug,5,6,5,4)
+
+Zanos_Mug:
+#incext PortraitFormatter "Playables/3Zanos.png"
+setMugEntry(0x4, Zanos_Mug,3,5,3,3)
+
+Ostrava_Mug:
+#incext PortraitFormatter "Playables/4Ostrava.png"
+setMugEntry(0x5, Ostrava_Mug,3,5,3,3)
+
+Mimi_Mug:
+#incext PortraitFormatter "Playables/5Mimi.png"
+setMugEntry(0x6, Mimi_Mug,3,6,3,4)
+
+Aubrey_Mug:
+#incext PortraitFormatter "Playables/6Harpii.png"
+setMugEntry(0x7, Aubrey_Mug,2,5,3,3)
+
+Zo_Mug:
+#incext PortraitFormatter "Playables/7Zo.png"
+setMugEntry(0x8, Zo_Mug,2,6,3,4)
+
+MVP_Mug:
+#incext PortraitFormatter "Playables/8MVP.png"
+setMugEntry(0x9, MVP_Mug,2,5,3,3)
+
+Pret_Mug:
+#incext PortraitFormatter "Playables/9Pretsel.png"
+setMugEntry(0xA, Pret_Mug,3,5,3,3)
+
+Ted_Mug:
+#incext PortraitFormatter "Playables/10Ted.png"
+setMugEntry(0xB, Ted_Mug,3,4,3,2)
+
+Zelos_Mug:
+#incext PortraitFormatter "Playables/11Zelos.png"
+setMugEntry(0xC, Zelos_Mug,3,5,3,3)
+
+Tia_Mug:
+#incext PortraitFormatter "Playables/12Tia.png"
+setMugEntry(0xD, Tia_Mug,4,5,4,3)
+
+Rose_Mug:
+#incext PortraitFormatter "Playables/13Rose.png"
+setMugEntry(0xE, Rose_Mug,3,5,3,3)
+
+Sarah_Mug:
+#incext PortraitFormatter "Playables/14Sarah.png"
+setMugEntry(0xF, Sarah_Mug,3,5,3,3)
+
+Hex_Mug:
+#incext PortraitFormatter "Playables/15Hex.png"
+setMugEntry(0x10, Hex_Mug,3,5,3,3)
+
+Devvy_Mug:
+#incext PortraitFormatter "Playables/16Devy.png"
+setMugEntry(0x11, Devvy_Mug,3,5,3,3)
+
+Nak_Mug:
+#incext PortraitFormatter "Playables/17Nak.png"
+setMugEntry(0x12, Nak_Mug,2,5,2,3)
+
+Obs_Mug:
+#incext PortraitFormatter "Playables/18Obs.png"
+setMugEntry(0x13, Obs_Mug,2,4,3,2)
+
+
+//Aphi_Mug:
+//#incext PortraitFormatter "Playables/2Aphi.png"
+//setMugEntry(0x4, Aphi_Mug,3,5,3,3)
+
+//Bosses
+Debil_Mug:
+#incext PortraitFormatter "Bosses/0Debil.png"
+setMugEntry(0x30, Debil_Mug,2,6,3,4)
+
+Tarte_Mug:
+#incext PortraitFormatter "Bosses/1Tarte.png"
+setMugEntry(0x31, Tarte_Mug,3,6,3,4)
+
+Tarte_Alt_Mug:
+#incext PortraitFormatter "Bosses/1Tarte1.png"
+setMugEntry(0x32, Tarte_Alt_Mug,3,6,3,4)
+
+Perkus_Mug:
+#incext PortraitFormatter "Bosses/2Perkus.png"
+setMugEntry(0x33, Perkus_Mug,2,5,2,4)
+
+
+//NPC
+
+//Menu Guys
+Anna:
+#incext PortraitFormatter "MenuGuys/Anna.png"
+setMugEntry(0x64, Anna,2,6,3,4)
+
+Armory:
+#incext PortraitFormatter "MenuGuys/Armory.png"
+setMugEntry(0x65, Armory,3,2,2,0)
+
+Vendor:
+#incext PortraitFormatter "MenuGuys/Vendor.png"
+setMugEntry(0x66, Vendor,3,3,2,0)
+
+Arena:
+#incext PortraitFormatter "MenuGuys/Arena.png"
+setMugEntry(0x67, Arena,3,2,2,0)
+
+SecretShop:
+#incext PortraitFormatter "MenuGuys/SecretShop.png"
+setMugEntry(0x68, SecretShop,3,3,2,0)
+
+/*
+Convoy:
+#incext PortraitFormatter "Playables/9Nana.png"
+setMugEntry(0xAB, Nana_Mug,2,5,2,3)
+
+*/
+
+// Alts
+Ben_Flip:
+#incext PortraitFormatter "Playables/Alts/0BenFlipped.png"
+setMugEntry(0x101, Ben_Flip,2,5,3,3)
+
+Ben_Sad:
+#incext PortraitFormatter "Playables/Alts/0BenSad.png"
+setMugEntry(0x102, Ben_Sad,2,5,3,3)
+
+Ben_Sad_Flip:
+#incext PortraitFormatter "Playables/Alts/0BenSadFlipped.png"
+setMugEntry(0x103, Ben_Sad_Flip,2,5,3,3)
+
+Ben_Mad:
+#incext PortraitFormatter "Playables/Alts/0BenMad.png"
+setMugEntry(0x104, Ben_Mad,2,5,3,3)
+
+Ben_Mad_Flip:
+#incext PortraitFormatter "Playables/Alts/0BenMadFlipped.png"
+setMugEntry(0x105, Ben_Mad_Flip,2,5,3,3)
+
+Livvy_Sad:
+#incext PortraitFormatter "Playables/Alts/1LivvySad.png"
+setMugEntry(0x106, Livvy_Sad,5,6,5,4)
+
+Livvy_Mad:
+#incext PortraitFormatter "Playables/Alts/1LivvyMad.png"
+setMugEntry(0x107, Livvy_Mad,5,6,5,4)
+
+//Aphi_Sad:
+//#incext PortraitFormatter "Playables/Alts/2AphiSad.png"
+//setMugEntry(0x108, Aphi_Sad,4,5,4,3)
+
+//Aphi_Mad:
+//#incext PortraitFormatter "Playables/Alts/2AphiMad.png"
+//setMugEntry(0x109, Aphi_Mad,4,5,4,3)
+
+Zo_Sad:
+#incext PortraitFormatter "Playables/Alts/3ZoSad.png"
+setMugEntry(0x10A, Zo_Sad,2,6,3,4)
+
+Zo_Mad:
+#incext PortraitFormatter "Playables/Alts/3ZoMad.png"
+setMugEntry(0x10B, Zo_Mad,2,6,3,4)
+
+Ted_Flip:
+#incext PortraitFormatter "Playables/Alts/4TedFlipped.png"
+setMugEntry(0x10C, Ted_Flip,3,4,3,2)
+
+Ted_Sad:
+#incext PortraitFormatter "Playables/Alts/4TedSad.png"
+setMugEntry(0x10D, Ted_Sad,3,4,3,2)
+
+Ted_Sad_Flip:
+#incext PortraitFormatter "Playables/Alts/4TedSadFlipped.png"
+setMugEntry(0x10E, Ted_Sad_Flip,3,4,3,2)
+
+Ted_Mad:
+#incext PortraitFormatter "Playables/Alts/4TedMad.png"
+setMugEntry(0x10F, Ted_Mad,3,4,3,2)
+
+Ted_Mad_Flip:
+#incext PortraitFormatter "Playables/Alts/4TedMadFlipped.png"
+setMugEntry(0x110, Ted_Mad_Flip,3,4,3,2)
+
+Hex_Flip:
+#incext PortraitFormatter "Playables/Alts/5HexFlipped.png"
+setMugEntry(0x111, Hex_Flip,3,5,3,3)
+
+//Hex_Sad:
+//#incext PortraitFormatter "Playables/Alts/5HexSad.png"
+//setMugEntry(0x112, Hex_Sad,3,5,3,3)
+
+Hex_Sad_Flip:
+#incext PortraitFormatter "Playables/Alts/5HexFlippedSad.png"
+setMugEntry(0x113, Hex_Sad_Flip,3,5,3,3)
+
+//Hex_Mad:
+//#incext PortraitFormatter "Playables/Alts/5HexMad.png"
+//setMugEntry(0x114, Hex_Mad,3,5,3,3)
+
+Hex_Mad_Flip:
+#incext PortraitFormatter "Playables/Alts/5HexFlippedMad.png"
+setMugEntry(0x115, Hex_Mad_Flip,3,5,3,3)
+
+//Nate_Sad:
+//#incext PortraitFormatter "Playables/Alts/6NateSad.png"
+//setMugEntry(0x116, Nate_Sad,3,6,3,4)
+
+//Nate_Mad:
+//#incext PortraitFormatter "Playables/Alts/6NateMad.png"
+//setMugEntry(0x117, Nate_Mad,3,6,3,4)
+
+//Ostrava_Sad:
+//#incext PortraitFormatter "Playables/Alts/8OstravaSad.png"
+//setMugEntry(0x120, Ostrava_Sad,2,5,2,3)
+
+//Ostrava_Mad:
+//#incext PortraitFormatter "Playables/Alts/8OstravaMad.png"
+//setMugEntry(0x121, Ostrava_Mad,2,5,2,3)
+
+//Nana_Sad:
+//#incext PortraitFormatter "Playables/Alts/9NanaSad.png"
+//setMugEntry(0x122, Nana_Sad,2,5,2,3)
+
+//Nana_Mad:
+//#incext PortraitFormatter "Playables/Alts/9NanaMad.png"
+//setMugEntry(0x123, Nana_Mad,2,5,2,3)
+
+//Mimi_Sad:
+//#incext PortraitFormatter "Playables/Alts/10MimiSad.png"
+//setMugEntry(0x124, Mimi_Sad,3,6,3,4)
+
+//Mimi_Mad:
+//#incext PortraitFormatter "Playables/Alts/10MimiMad.png"
+//setMugEntry(0x125, Mimi_Mad,3,6,3,4)
+
+//Rose_Sad:
+//#incext PortraitFormatter "Playables/Alts/11RoseSad.png"
+//setMugEntry(0x126, Rose_Sad,3,5,3,3)
+
+//Rose_Mad:
+//#incext PortraitFormatter "Playables/Alts/11RoseMad.png"
+//setMugEntry(0x127, Rose_Mad,3,5,3,3)
+
+Zanos_Sad:
+#incext PortraitFormatter "Playables/Alts/12ZanosSad.png"
+setMugEntry(0x128, Zanos_Sad,3,5,3,3)
+
+Zanos_Mad:
+#incext PortraitFormatter "Playables/Alts/12ZanosMad.png"
+setMugEntry(0x129, Zanos_Mad,3,5,3,3)
+
+//Sonu_Sad:
+//#incext PortraitFormatter "Playables/13SonuSad.png"
+//setMugEntry(0x12A, Sonu_Sad,3,6,3,4)
+
+//Sonu_Mad:
+//#incext PortraitFormatter "Playables/13SonuMad.png"
+//setMugEntry(0x12B, Sonu_Mad,3,6,3,4)
+
+
+
+
+
+
+//Class Cards
+Knight_Card:
+#incext Png2Dmp "ClassCards/Knight.png" --lz77
+Knight_Card_Palette:
+#incext Png2Dmp "ClassCards/Knight.png" --palette-only
+setCardEntry(0x76, Knight_Card,Knight_Card_Palette)
+
+Archer_Card:
+#incext Png2Dmp "ClassCards/Archer.png" --lz77
+Archer_Card_Palette:
+#incext Png2Dmp "ClassCards/Archer.png" --palette-only
+setCardEntry(0x78, Archer_Card,Archer_Card_Palette)
+
+Mage_Card:
+#incext Png2Dmp "ClassCards/Mage.png" --lz77
+Mage_Card_Palette:
+#incext Png2Dmp "ClassCards/Mage.png" --palette-only
+setCardEntry(0x7C, Mage_Card,Mage_Card_Palette)
+
+Cav_Card:
+#incext Png2Dmp "ClassCards/Cavalier.png" --lz77
+Cav_Card_Palette:
+#incext Png2Dmp "ClassCards/Cavalier.png" --palette-only
+setCardEntry(0x80, Cav_Card,Cav_Card_Palette)
+
+Lancer_Card:
+#incext Png2Dmp "ClassCards/Lancer.png" --lz77
+Lancer_Card_Palette:
+#incext Png2Dmp "ClassCards/Lancer.png" --palette-only
+setCardEntry(0x8A, Lancer_Card,Lancer_Card_Palette)
+
+Pirate_Card:
+#incext Png2Dmp "ClassCards/Pirate.png" --lz77
+Pirate_Card_Palette:
+#incext Png2Dmp "ClassCards/Pirate.png" --palette-only
+setCardEntry(0x8C, Pirate_Card,Pirate_Card_Palette)
+
+Merc_Card:
+#incext Png2Dmp "ClassCards/Mercenary.png" --lz77
+Merc_Card_Palette:
+#incext Png2Dmp "ClassCards/Mercenary.png" --palette-only
+setCardEntry(0x90, Merc_Card,Merc_Card_Palette)

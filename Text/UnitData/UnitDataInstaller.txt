@@ -1,0 +1,2 @@
+#include ClassData.txt
+#include CharacterData.txt
