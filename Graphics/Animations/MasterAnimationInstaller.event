@@ -303,5 +303,9 @@
 	#include "Obs/Obs Installer.event" //93
 	}
 	{
-	#include "Zelos/Zelos Installer.event" //6
+	#include "Zelos/Magic/Zelos Installer.event" //73
 	}
+	{
+	#include "Zelos/Sword/Sword Installer.event" //74
+	}
+	

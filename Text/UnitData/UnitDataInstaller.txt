@@ -1,2 +1,3 @@
 #include ClassData.txt
 #include CharacterData.txt
+#include ItemData.txt

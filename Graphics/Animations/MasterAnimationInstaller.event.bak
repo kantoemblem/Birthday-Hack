@@ -303,5 +303,5 @@
 	#include "Obs/Obs Installer.event" //93
 	}
 	{
-	#include "Zelos/Zelos Installer.event //6
+	#include "Zelos/Zelos Installer.event" //6
 	}

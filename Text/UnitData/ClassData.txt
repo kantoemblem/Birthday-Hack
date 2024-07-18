@@ -47,6 +47,9 @@ Eclipse Knight[X]
 ## EclipseKnightDesc
 _[X]
 
+## ThaumaturgeName ^
+Thaumaturge[X]
+
 
 
 ## CavalierDesc

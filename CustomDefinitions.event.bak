@@ -53,10 +53,21 @@
 #define naknaknaknaknaknaknak naknak
 #define Obsidian 0x12
 #define Obs Obsidian
+#define Tarte 0x13
+#define Germaine 0x14
+#define Perkus 0x15
+#define Acacia 0x16
+
+
 
 //Class Definitions
 #define Commander 0x1
-#define Priestess
+#define Priestess 0x2
+#define Freelancer 0x3
+#define Thaumaturge 0x4b
+
+//Item Definitions
+#define JusticeBolt 0x78
 
 
 
@@ -73,6 +84,21 @@
 
 #define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB 0x0 0x0"
 
+//Graphics definitions
+
+//Class card definition
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+
+//Tileset stuff
+#define TilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#define EventPointerListOffset ExpandedPointerList
+#define EventPointerTable(id,offset) "PUSH; ORG EventPointerListOffset+(4*id); POIN offset; POP"
+
+//Item Icons
+
+#define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
+
+
 //item ID for skill scroll
 #define SkillScroll 0xBC
 
@@ -80,3 +106,34 @@
 
 // #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
+//Label Battle Animations
+//#ifndef ClassAnimTable
+//    #define ClassAnimTable (0xc00008-0x20)
+//#endif
+//#define AnimTableEntry(index) "ORG ClassAnimTable - 0x20 + (index * 0x20)"
+
+#define Item 0x9
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
+#define Spears Lances
+#define LanceAnim(Animation) "BYTE Spears 0x1 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE ShortAxe 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Item 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+//Event Definitions
+#define GiveGold(money) "CALL $591F40; SVAL 0x3 money; GIVEITEMTOMAIN 0"
+//Move unit at specified coordinate
+//Credit Pikmin1211
+#define MoveByCoords(speed, srcX, srcY, destX, destY) "SVAL sB srcX|(srcY<<16); MOVE speed UnitAtCoordsSlotB [destX, destY]"
+//Generic always event macro
+#define AlwaysEvent(completionFlag, eventOffset, triggerFlag) "AFEV completionFlag eventOffset triggerFlag"
+#define ClearAll "CLEA 0x0; CLEE 0x0; CLEN 0x0" 
+#define HighlightUnit(unitID,frames) "CUMO unitID; STAL frames; CURE"
+#define HighlightLocation

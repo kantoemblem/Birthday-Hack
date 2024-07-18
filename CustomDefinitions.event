@@ -42,7 +42,7 @@
 #define Rose 0xD
 #define Ribsplitter Rose
 #define Sarah 0xE
-#define Hexchamp 0xF
+#define HexChamp 0xF
 #define Devvy 0x10
 #define Devvo Devvy
 #define Devisio Devvo
@@ -53,10 +53,23 @@
 #define naknaknaknaknaknaknak naknak
 #define Obsidian 0x12
 #define Obs Obsidian
+#define Tarte 0x13
+#define Germaine 0x14
+#define Perkus 0x15
+#define Acacia 0x16
+
+
 
 //Class Definitions
 #define Commander 0x1
-#define Priestess
+#define Priestess 0x2
+#define Freelancer 0x3
+#define Tactician 0x4
+#define Legend 0x10
+#define Thaumaturge 0x4b
+
+//Item Definitions
+#define JusticeBolt 0x78
 
 
 

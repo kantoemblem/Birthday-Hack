@@ -18,7 +18,7 @@ POP
 //Arrow palette
 PUSH
 ORG 0xA0328C //Arrow palette data position
-BYTE $12 $47 $18 $63 $10 $42 $FF $7F $00 $42 $FA $61 $DE $7E $96 $20 $1E $2D $1F $00 $E0 $03 $FF $03 $00 $7C $1F $7C $E0 $7F $6E $18 //palette data
+BYTE $74 $57 $00 $00 $00 $00 $00 $00 $3F $77 $B8 $14 $DD $1C $1E $21 $BF $35 $1F $5F $00 $00 $00 $00 $00 $00 $00 $00 $9F $56 $F4 $1C //palette data
 POP 
 
 //Battle Preview palette

@@ -27,7 +27,7 @@ PROTECT 0xC00000 //start of anim table?
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
-    #endif // USE_TEST_MAP
+    //#endif // USE_TEST_MAP
 	
 	//Graphics
 	#include "Graphics/GraphicsInstaller.event"

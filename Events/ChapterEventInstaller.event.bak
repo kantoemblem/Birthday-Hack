@@ -1,0 +1,24 @@
+{
+#include "ChapterP.event"
+}
+
+{
+#include "ChapterPP.event"
+}
+
+{
+#include "ChapterP2.event"
+}
+
+PUSH
+//Skip very beginning world map
+ORG $A39768
+EVBIT_MODIFY 0x1
+SKIPWN
+ENDA
+POP
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDB

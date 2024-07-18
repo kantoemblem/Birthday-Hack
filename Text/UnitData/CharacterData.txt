@@ -61,6 +61,9 @@ Germaine[X]
 ## PerkusName
 Perkus[X]
 
+## AcaciaName
+Acacia[X]
+
 
 ## BenDesc
 A bombastic swordsman who goes[N]
@@ -130,7 +133,7 @@ A swordsman who is sussy amongus!!!![N]
 
 ## NakDesc
 A rather lax Nothric lord.[N]
-They're fun-loving, but quiet.[X]
+She's fun-loving, but quiet.[X]
 
 ## ObsDesc
 The 15th King of Fighters[X]
@@ -145,3 +148,8 @@ with an unceasing determination.[X]
 
 ## PerkusDesc
 Registered Sex-offender.[X]
+
+## AcaciaDesc
+Germaine's sister whom he dotes[N]
+on tirelessly. Confident and playful[N]
+with an air of refinement and elegance.[X]

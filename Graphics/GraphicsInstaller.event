@@ -1,4 +1,4 @@
-//#include "Tilesets/TilesetInstaller.event"
+#include "Tilesets/TilesetInstaller.event"
 #include "Mugs/MugInstaller.event"
 #include "Animations/AnimationReference.event"
 #include "Animations/MasterAnimationInstaller.event"

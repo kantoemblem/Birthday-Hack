@@ -4,7 +4,7 @@
 #include "Animations/MasterAnimationInstaller.event"
 //#include "Palettes/Palette Setup.event"
 #include "MapSprites/MapSpriteInstaller.event"
-//#include "ItemIcons/ItemIconInstaller.event"
+#include "ItemIcons/ItemIconInstaller.event"
 #include "SystemIconInstaller.event"
 //#include "BattleScreen/BattleScreenInstaller.event"
 

@@ -170,7 +170,10 @@ LegendStand:
 #incext Png2Dmp "_Devvy/Stand.png" --lz77
 LegendMove:
 #incext Png2Dmp "_Devvy/Move.png" --lz77
-
+SarahStand:
+#incext Png2Dmp "_Sarah/Stand.png" --lz77
+SarahMove:
+#incext Png2Dmp "_Sarah/Move.png" --lz77
 
 
 

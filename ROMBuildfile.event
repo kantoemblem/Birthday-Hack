@@ -29,6 +29,11 @@ PROTECT 0xC00000 //start of anim table?
     #include "Maps/MasterMapInstaller.event"
     //#endif // USE_TEST_MAP
 	
+	//Events
+	#include "Events/SnekREDAs.event"
+	#include "Events/EscapePoints.event"
+	#include "Events/ChapterEventInstaller.event"
+	
 	//Graphics
 	#include "Graphics/GraphicsInstaller.event"
 	

@@ -174,8 +174,14 @@ SarahStand:
 #incext Png2Dmp "_Sarah/Stand.png" --lz77
 SarahMove:
 #incext Png2Dmp "_Sarah/Move.png" --lz77
-
-
+AubreyStand:
+#incext Png2Dmp "_Aubrey/Stand.png" --lz77
+AubreyMove:
+#incext Png2Dmp "_Aubrey/Move.png" --lz77
+ZelosS:
+#incext Png2Dmp "_Zelos/ZelosS.png" --lz77
+ZelosM:
+#incext Png2Dmp "_Zelos/ZelosM.png" --lz77
 
 //➖➖🟪🟪
 //🟧🟪🟪🟪🟪

@@ -1,0 +1,72 @@
+## TruthPyreName ^
+Truth's Pyre[X]
+
+## TruthPyreDesc ^
+Zo's tome. Grants +2 Atk/Def/AS[X]
+
+## JusticeBoltName ^
+Justice's Bolt[X]
+
+## JusticeBoltDesc ^
+Ben's super cool sword!!!![X]
+
+## KontonName
+Konton[X]
+
+## KontonDesc ^
+A commander's blade. Eff. [armor][horse][X]
+
+
+## WingSpearName ^
+Wing Spear[X]
+
+
+
+## MerchantLanceName ^
+Peddler's Pike[X]
+
+## MerchantLanceDesc ^
+Nana's trusty companion. Cancels enemy skills.[X]
+
+
+## RenewalRingName ^
+Renewal Ring[X]
+
+## RenewalRingDesc ^
+When Worn: Restores 30%[N]
+HP at start of unit's turn.[X]
+
+## FocusRingName ^
+Focus Ring[X]
+
+## FocusRingDesc ^
+When Worn: +10 Crit when[N]
+there are no adjacent allies.[X]
+
+## CharismaRingName ^
+Charisma Ring[X]
+
+## CharismaRingDesc ^
+When Worn: Grants adjacent[N]
+allies +10 Hit/Avoid.[X]
+
+## SolidarityRingName ^
+Solidarity Ring[X]
+
+## SolidarityRingDesc ^
+When Worn: Grants adjacent[N]
+allies +10 Crit/CritAvo.[X]
+
+## ReMoveRingName ^
+Re-Move Ring[X]
+
+## ReMoveRingDesc ^
+When Worn: Luck% chance[N]
+to gain another action.[X]
+
+## ParagonRingName ^
+Paragon Ring[X]
+
+## ParagonRingDesc ^
+When Worn: Unit gains +1[N]
+level up between chapters[X]

@@ -131,6 +131,8 @@
 #define DarkAffinity 5
 #define LightAffinity 6
 #define AnimaAffinity 7
+#define EarthAffinity 8
+#define HeavenAffinity 9
 
 #define negateByte(byte) "0x100-byte"
 #define IsPointer 0x8000000
@@ -185,5 +187,9 @@
 #define ItemStatus(StatusID,Duration) "StatusID | (Duration << 4)"
 
 #endif
+
+//Weapon Lock Array
+
+#define Passive 0x800000
 
 #include "ExternalTables.event"

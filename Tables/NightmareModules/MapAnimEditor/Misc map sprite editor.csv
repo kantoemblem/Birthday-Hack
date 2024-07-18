@@ -22,7 +22,7 @@ Myrmidon (F),MyrmidonFMove|IsPointer,0x81cdb58
 Swordmaster,0x81cdcb0,0x81ce4fc
 Swordmaster (F),0x81ce65c,0x81ceee0
 Assassin,0x81cf040,0x81cf7e8
-Assassin (F),0x81cf940,0x81d0160
+Assassin (F),AubreyMove|IsPointer,0x81d0160
 Archer,ArcherMMove|IsPointer,0x81d0a7c
 Archer (F),ArcherFMove|IsPointer,0x81d13c8
 Sniper,SniperMMove|IsPointer,0x81d1d48
@@ -40,7 +40,7 @@ Mage (F),MageFMove|IsPointer,0x81d908c
 Sage,0x81d91e4,0x81d9b58
 Sage (F),0x81d9cb0,0x81da694
 Mage Knight,0x81da7ec,0x81db0f8
-Mage Knight (F),0x81db250,0x81dbbcc
+Mage Knight (F),ZelosM|IsPointer,0x81dbbcc
 Bishop,0x81dbd24,0x81dc590
 Bishop (F),0x81dc6f0,0x81dcf44
 Shaman,0x81dd0a4,0x81dd888
