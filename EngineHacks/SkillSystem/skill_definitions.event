@@ -180,8 +180,8 @@
 
 // _ Oath : At the start of your turn, gain up to +4 _ if adjacent to an ally.
 // Author: Vesly 
-#define MagOathID  255 
-#define StrOathID  255
+#define MagOathID  255
+#define StrOathID  80
 #define SklOathID  255 
 #define SpdOathID  255 
 #define DefOathID  255 
@@ -228,7 +228,7 @@
 #define SealDefID 83
 #define SealResID 84
 ////By Snakey1
-#define SealMagID 80
+#define SealMagID 255
 
 //Full Metal Body: This unit is immune to all the Seal skills.
 //By Leonarth
@@ -927,7 +927,7 @@
 
 //Assassinate: When initiating battle at 1 range: +2 Damage, double attacks occur before counter.
 //By Zeta
-#define AssassinateID 139
+#define AssassinateID 255
 
 // Prideful Warrior: This unit always attacks after the enemy, but always doubles.
 // By Vesly 
@@ -954,7 +954,7 @@
 
 // Bold Fighter: When attacking, this unit always doubles. 
 // By Vesly 
-#define BoldFighterID 255 
+#define BoldFighterID 139
 
 // Vengeful Fighter: When defending, this unit always doubles. 
 // By Vesly 

@@ -141,7 +141,7 @@
 
 //Hoarder's Bane: At the end of your turn, consume a vulnerary from the supply if below full health.
 // Author: Vesly 
-#define HoardersBaneID 58
+#define HoardersBaneID 255
 
 // Dark Bargain: At the end of your turn, sacrifice extra exp to heal by that much.
 // Author: Vesly 
@@ -766,7 +766,7 @@
 
 //Bane: Leave the opponent at 1 HP if the attack would kill. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define BaneID 255
+#define BaneID 58
 
 //Barricade: Damage taken is halved after first being struck.
 //By Snakey1

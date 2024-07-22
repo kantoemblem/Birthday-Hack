@@ -57,7 +57,16 @@
 #define Germaine 0x14
 #define Perkus 0x15
 #define Acacia 0x16
-
+#define Bart 0x17
+#define Sigurd 0x18
+#define Tots 0x19
+#define Zeshin 0x1A
+#define Barbosa 0x1B
+#define Orvald 0x1C
+#define Crimson 0x1D
+#define Diana 0x1E
+#define Kirby 0x1F
+#define Zeke 0x20
 
 
 //Class Definitions
@@ -67,6 +76,8 @@
 #define Tactician 0x4
 #define Legend 0x10
 #define Thaumaturge 0x4b
+#define Twilight 0x2E
+#define Despair 0x30
 
 //Item Definitions
 #define JusticeBolt 0x78

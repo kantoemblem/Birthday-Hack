@@ -42,7 +42,7 @@
 #define Rose 0xD
 #define Ribsplitter Rose
 #define Sarah 0xE
-#define Hexchamp 0xF
+#define HexChamp 0xF
 #define Devvy 0x10
 #define Devvo Devvy
 #define Devisio Devvo
@@ -64,6 +64,8 @@
 #define Commander 0x1
 #define Priestess 0x2
 #define Freelancer 0x3
+#define Tactician 0x4
+#define Legend 0x10
 #define Thaumaturge 0x4b
 
 //Item Definitions
