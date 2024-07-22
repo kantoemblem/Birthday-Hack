@@ -30,7 +30,7 @@
 	
 	ALIGN 4
 	VillageAnims1:
-	#incext Png2Dmp "villageanims/villageanims000.png"
+	#incext Png2Dmp "villageanims/villageanims001.png"
 	ALIGN 4
 	VillageAnims2:
 	#incext Png2Dmp "villageanims/villageanims001.png"
@@ -158,3 +158,68 @@
 	EventPointerTable(0x2,SuperFieldsPalette)
 	EventPointerTable(0x1,SuperFieldsImage)
 	EventPointerTable(0x5,SuperFieldsAnimation)
+	
+	
+
+// Castle
+	ALIGN 4
+	CastleConfig:
+	#incext compress "Castle Update Config.mapchip_config"
+	
+	ALIGN 4
+	CastlePalette:
+	#incext Png2Dmp "castle_1.png" --palette-only
+	
+	ALIGN 4
+	CastleImage:
+	#incext Png2Dmp "castle_1.png" --lz77
+	
+	ALIGN 4
+	CastleAnimation:
+	TilesetAnimation(28,4096,CastleAnims1)
+	TilesetAnimation(28,4096,CastleAnims2)
+	TilesetAnimation(28,4096,CastleAnims3)
+	TilesetAnimation(28,4096,CastleAnims4)
+	TilesetAnimation(28,4096,CastleAnims5)
+	TilesetAnimation(28,4096,CastleAnims6)
+	TilesetAnimation(28,4096,CastleAnims7)
+	TilesetAnimation(28,4096,CastleAnims8)
+	WORD 0x0 0x0
+	
+	ALIGN 4
+	CastleAnims1:
+	#incext Png2Dmp "castleanims/castleanims000.png"
+
+	ALIGN 4
+	CastleAnims2:
+	#incext Png2Dmp "castleanims/castleanims001.png"
+
+	ALIGN 4
+	CastleAnims3:
+	#incext Png2Dmp "castleanims/castleanims002.png"
+
+	ALIGN 4
+	CastleAnims4:
+	#incext Png2Dmp "castleanims/castleanims003.png"
+
+	ALIGN 4
+	CastleAnims5:
+	#incext Png2Dmp "castleanims/castleanims004.png"
+
+	ALIGN 4
+	CastleAnims6:
+	#incext Png2Dmp "castleanims/castleanims005.png"
+
+	ALIGN 4
+	CastleAnims7:
+	#incext Png2Dmp "castleanims/castleanims006.png"
+
+	ALIGN 4
+	CastleAnims8:
+	#incext Png2Dmp "castleanims/castleanims007.png"
+	
+	ALIGN 4
+	EventPointerTable(0x1a,CastleConfig)
+	EventPointerTable(0x19,CastlePalette)
+	EventPointerTable(0x18,CastleImage)
+	EventPointerTable(0x1C,CastleAnimation)

@@ -1,6 +1,9 @@
 {
 #include "ChapterP.event"
 }
+{
+#include "BattlePrep.event"
+}
 
 PUSH
 //Skip very beginning world map

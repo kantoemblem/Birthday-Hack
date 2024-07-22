@@ -303,5 +303,23 @@
 	#include "Obs/Obs Installer.event" //93
 	}
 	{
-	#include "Zelos/Zelos Installer.event" //6
+	#include "Zelos/Magic/Zelos Installer.event" //73
+	}
+	{
+	#include "Zelos/Sword/Sword Installer.event" //74
+	}
+	{
+	#include "Aubrey/Sword/Aubrey Installer.event"
+	}
+	{
+	#include "Aubrey/Unarmed/Aubrey Installer.event"
+	}
+	{
+	#include "Kirbyroth/Kirbo Installer.event"
+	}
+	{
+	#include "Diana/Diana Installer.event"
+	}
+	{
+	#include "Tarte/Sword/Sword Installer.event"
 	}

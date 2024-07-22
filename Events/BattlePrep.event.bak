@@ -1,0 +1,73 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0xc5,BattlePrep)
+
+BattlePrep:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Ben Commander 0x00 Level(1, Ally, 0) [3,1] 0x00 0x00 0x0 0x0 [0x78, 0xa1, 0x6d] NoAI
+UNIT Livvy Priestess 0x00 Level(1, Ally, 0) [11,1] 0x00 0x00 0x0 0x0 [Rapier, Fire, Mend, 0x6d] NoAI
+UNIT Zanos Thaumaturge 0x00 Level(1, Ally, 0) [2,3] 0x00 0x00 0x0 0x0 [Physic, Restore, Divine] NoAI
+UNIT Ost Fighter 0x00 Level(1, Ally, 0) [4,3] 0x00 0x00 0x0 0x0 [Halberd, 0x29, 0x6c] NoAI
+UNIT Mimi Shaman 0x00 Level(1, Ally, 0) [3,4] 0x00 0x00 0x0 0x0 [Nosferatu, Heal, Rescue] NoAI
+UNIT Aubrey 0x18 0x00 Level(1, Ally, 0) [2,5] 0x00 0x00 0x0 0x0 [Shamshir, 0x30, 0x6c] NoAI
+UNIT Zo Tactician 0x00 Level(1, Ally, 0) [4,5] 0x00 0x00 0x0 0x0 [0x83, Thunder, 0x6c] NoAI
+UNIT MVP Freelancer 0x00 Level(1, Ally, 0) [3,6] 0x00 0x00 0x0 0x0 [Lancereaver, Axereaver, Swordreaver, 0xb6] NoAI
+UNIT Pret Summoner 0x00 Level(1, Ally, 0) [2,7] 0x00 0x00 0x0 0x0 [Nosferatu, Mend, Sleep] NoAI
+UNIT Ted WyvernRider 0x00 Level(1, Ally, 0) [4,7] 0x00 0x00 0x0 0x0 [PoisonAxe, 0x28] NoAI
+UNIT Zelos 0x2A 0x00 Level(1, Ally, 0) [12,3] 0x00 0x00 0x0 0x0 [0x3A, 0x3E, 0x6c] NoAI
+UNIT Tia 0x33 0x00 Level(1, Ally, 0) [10,3] 0x00 0x00 0x0 0x0 [0x81, Recover, Silence] NoAI
+UNIT Rose 0x48 0x00  Level(1, Ally, 0) [11,4] 0x00 0x00 0x0 0x0 [0xBD, Javelin, 0x6c] NoAI
+UNIT Sarah Dancer 0x00 Level(1, Ally, 0) [12,5] 0x00 0x00 0x0 0x0 [0x6D] NoAI
+UNIT HexChamp 0x8 0x00  Level(1, Ally, 0) [10,5] 0x00 0x00 0x0 0x0 [DragonAxe, DevilAxe, 0x6D] NoAI
+UNIT Devvy Legend 0x00 Level(1, Ally, 0) [11,6] 0x00 0x00 0x0 0x0 [0x82, KillingEdge, 0x6c] NoAI
+UNIT naknaknaknaknaknaknak 0x3C 0x00  Level(1, Ally, 0) [12,4] 0x00 0x00 0x0 0x0 [0x1] NoAI
+UNIT Obs 0x36 0x00 Level(1, Ally, 0) [10,4] 0x00 0x00 0x0 0x0 [Eclipse, Fenrir, Luna] NoAI
+UNIT
+
+BeginningScene:
+ENDA
+
+EndingScene:
+MNC2 0x0
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

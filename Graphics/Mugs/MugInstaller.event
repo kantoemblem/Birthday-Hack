@@ -87,21 +87,67 @@ setMugEntry(0x13, Obs_Mug,2,4,3,2)
 //setMugEntry(0x4, Aphi_Mug,3,5,3,3)
 
 //Bosses
-Debil_Mug:
-#incext PortraitFormatter "Bosses/0Debil.png"
-setMugEntry(0x30, Debil_Mug,2,6,3,4)
 
 Tarte_Mug:
 #incext PortraitFormatter "Bosses/1Tarte.png"
-setMugEntry(0x31, Tarte_Mug,3,6,3,4)
+setMugEntry(0x14, Tarte_Mug,3,6,3,4)
 
 Tarte_Alt_Mug:
 #incext PortraitFormatter "Bosses/1Tarte1.png"
-setMugEntry(0x32, Tarte_Alt_Mug,3,6,3,4)
+setMugEntry(0x15, Tarte_Alt_Mug,3,6,3,4)
+
+Germaine_Mug:
+#incext PortraitFormatter "Bosses/1Germaine.png"
+setMugEntry(0x16, Germaine_Mug,2,4,2,2)
 
 Perkus_Mug:
 #incext PortraitFormatter "Bosses/2Perkus.png"
-setMugEntry(0x33, Perkus_Mug,2,5,2,4)
+setMugEntry(0x17, Perkus_Mug,2,5,2,4)
+
+Acacia_Mug:
+#incext PortraitFormatter "Bosses/1Acacia.png"
+setMugEntry(0x18, Acacia_Mug,3,5,3,3)
+
+Bart_Mug:
+#incext PortraitFormatter "Bosses/BartholohughFatima.png"
+setMugEntry(0x19, Bart_Mug,2,5,3,3)
+
+Sigurd_Mug:
+#incext PortraitFormatter "Bosses/SigurdXenogear.png"
+setMugEntry(0x1A, Sigurd_Mug,2,5,3,3)
+
+Tots_Mug:
+#incext PortraitFormatter "Bosses/Totswithglasses.png"
+setMugEntry(0x1B, Tots_Mug,2,6,3,3)
+
+Zeshin_Mug:
+#incext PortraitFormatter "Bosses/Zeshin.png"
+setMugEntry(0x1C, Zeshin_Mug,2,5,3,3)
+
+Barbosa_Mug:
+#incext PortraitFormatter "Bosses/Barbosa.png"
+setMugEntry(0x1D, Barbosa_Mug,3,5,3,3)
+
+Orvald_Mug:
+#incext PortraitFormatter "Bosses/Orvald.png"
+setMugEntry(0x1E, Orvald_Mug,3,5,3,3)
+
+CrimsonKnight_Mug:
+#incext PortraitFormatter "Bosses/CrimsonKnight.png"
+setMugEntry(0x1F, CrimsonKnight_Mug,3,5,3,3)
+
+Diana_Mug:
+#incext PortraitFormatter "Bosses/Diana.png"
+setMugEntry(0x20, Diana_Mug,3,4,3,2)
+
+Kirbo_Mug:
+#incext PortraitFormatter "Bosses/Kirbyroth.png"
+setMugEntry(0x21, Kirbo_Mug,2,8,3,6)
+
+Zeke_Mug:
+#incext PortraitFormatter "Bosses/2ZekeVonGenbu.png"
+setMugEntry(0x22, Zeke_Mug,3,5,3,3)
+
 
 
 //NPC
@@ -163,121 +209,93 @@ Livvy_Mad:
 #incext PortraitFormatter "Playables/Alts/1LivvyMad.png"
 setMugEntry(0x107, Livvy_Mad,5,6,5,4)
 
-//Aphi_Sad:
-//#incext PortraitFormatter "Playables/Alts/2AphiSad.png"
-//setMugEntry(0x108, Aphi_Sad,4,5,4,3)
-
-//Aphi_Mad:
-//#incext PortraitFormatter "Playables/Alts/2AphiMad.png"
-//setMugEntry(0x109, Aphi_Mad,4,5,4,3)
-
 Zo_Sad:
 #incext PortraitFormatter "Playables/Alts/3ZoSad.png"
-setMugEntry(0x10A, Zo_Sad,2,6,3,4)
+setMugEntry(0x108, Zo_Sad,2,6,3,4)
 
 Zo_Mad:
 #incext PortraitFormatter "Playables/Alts/3ZoMad.png"
-setMugEntry(0x10B, Zo_Mad,2,6,3,4)
+setMugEntry(0x109, Zo_Mad,2,6,3,4)
 
 Ted_Flip:
 #incext PortraitFormatter "Playables/Alts/4TedFlipped.png"
-setMugEntry(0x10C, Ted_Flip,3,4,3,2)
+setMugEntry(0x10A, Ted_Flip,3,4,3,2)
 
 Ted_Sad:
 #incext PortraitFormatter "Playables/Alts/4TedSad.png"
-setMugEntry(0x10D, Ted_Sad,3,4,3,2)
+setMugEntry(0x10B, Ted_Sad,3,4,3,2)
 
 Ted_Sad_Flip:
 #incext PortraitFormatter "Playables/Alts/4TedSadFlipped.png"
-setMugEntry(0x10E, Ted_Sad_Flip,3,4,3,2)
+setMugEntry(0x10C, Ted_Sad_Flip,3,4,3,2)
 
 Ted_Mad:
 #incext PortraitFormatter "Playables/Alts/4TedMad.png"
-setMugEntry(0x10F, Ted_Mad,3,4,3,2)
+setMugEntry(0x10D, Ted_Mad,3,4,3,2)
 
 Ted_Mad_Flip:
 #incext PortraitFormatter "Playables/Alts/4TedMadFlipped.png"
-setMugEntry(0x110, Ted_Mad_Flip,3,4,3,2)
+setMugEntry(0x10E, Ted_Mad_Flip,3,4,3,2)
 
 Hex_Flip:
 #incext PortraitFormatter "Playables/Alts/5HexFlipped.png"
-setMugEntry(0x111, Hex_Flip,3,5,3,3)
+setMugEntry(0x10F, Hex_Flip,3,5,3,3)
 
-//Hex_Sad:
-//#incext PortraitFormatter "Playables/Alts/5HexSad.png"
-//setMugEntry(0x112, Hex_Sad,3,5,3,3)
+Ostrava_Sad:
+#incext PortraitFormatter "Playables/Alts/8OstravaSad.png"
+setMugEntry(0x110, Ostrava_Sad,2,5,2,3)
 
-Hex_Sad_Flip:
-#incext PortraitFormatter "Playables/Alts/5HexFlippedSad.png"
-setMugEntry(0x113, Hex_Sad_Flip,3,5,3,3)
-
-//Hex_Mad:
-//#incext PortraitFormatter "Playables/Alts/5HexMad.png"
-//setMugEntry(0x114, Hex_Mad,3,5,3,3)
-
-Hex_Mad_Flip:
-#incext PortraitFormatter "Playables/Alts/5HexFlippedMad.png"
-setMugEntry(0x115, Hex_Mad_Flip,3,5,3,3)
-
-//Nate_Sad:
-//#incext PortraitFormatter "Playables/Alts/6NateSad.png"
-//setMugEntry(0x116, Nate_Sad,3,6,3,4)
-
-//Nate_Mad:
-//#incext PortraitFormatter "Playables/Alts/6NateMad.png"
-//setMugEntry(0x117, Nate_Mad,3,6,3,4)
-
-//Ostrava_Sad:
-//#incext PortraitFormatter "Playables/Alts/8OstravaSad.png"
-//setMugEntry(0x120, Ostrava_Sad,2,5,2,3)
-
-//Ostrava_Mad:
-//#incext PortraitFormatter "Playables/Alts/8OstravaMad.png"
-//setMugEntry(0x121, Ostrava_Mad,2,5,2,3)
-
-//Nana_Sad:
-//#incext PortraitFormatter "Playables/Alts/9NanaSad.png"
-//setMugEntry(0x122, Nana_Sad,2,5,2,3)
-
-//Nana_Mad:
-//#incext PortraitFormatter "Playables/Alts/9NanaMad.png"
-//setMugEntry(0x123, Nana_Mad,2,5,2,3)
-
-//Mimi_Sad:
-//#incext PortraitFormatter "Playables/Alts/10MimiSad.png"
-//setMugEntry(0x124, Mimi_Sad,3,6,3,4)
-
-//Mimi_Mad:
-//#incext PortraitFormatter "Playables/Alts/10MimiMad.png"
-//setMugEntry(0x125, Mimi_Mad,3,6,3,4)
-
-//Rose_Sad:
-//#incext PortraitFormatter "Playables/Alts/11RoseSad.png"
-//setMugEntry(0x126, Rose_Sad,3,5,3,3)
-
-//Rose_Mad:
-//#incext PortraitFormatter "Playables/Alts/11RoseMad.png"
-//setMugEntry(0x127, Rose_Mad,3,5,3,3)
+Ostrava_Mad:
+#incext PortraitFormatter "Playables/Alts/8OstravaMad.png"
+setMugEntry(0x111, Ostrava_Mad,2,5,2,3)
 
 Zanos_Sad:
 #incext PortraitFormatter "Playables/Alts/12ZanosSad.png"
-setMugEntry(0x128, Zanos_Sad,3,5,3,3)
+setMugEntry(0x112, Zanos_Sad,3,5,3,3)
 
 Zanos_Mad:
 #incext PortraitFormatter "Playables/Alts/12ZanosMad.png"
-setMugEntry(0x129, Zanos_Mad,3,5,3,3)
+setMugEntry(0x113, Zanos_Mad,3,5,3,3)
 
-//Sonu_Sad:
-//#incext PortraitFormatter "Playables/13SonuSad.png"
-//setMugEntry(0x12A, Sonu_Sad,3,6,3,4)
+Tarte_Flip:
+#incext PortraitFormatter "Bosses/Alts/1TarteFlip.png"
+setMugEntry(0x114, Tarte_Flip,3,6,3,4)
 
-//Sonu_Mad:
-//#incext PortraitFormatter "Playables/13SonuMad.png"
-//setMugEntry(0x12B, Sonu_Mad,3,6,3,4)
+Tarte_Flip_Alt:
+#incext PortraitFormatter "Bosses/Alts/1Tart1Flip.png"
+setMugEntry(0x115, Tarte_Flip_Alt,3,6,3,4)
 
+Tarte_Sad:
+#incext PortraitFormatter "Bosses/Alts/1TarteSad.png"
+setMugEntry(0x116, Tarte_Sad,3,6,3,4)
 
+Tarte_Sad_Alt:
+#incext PortraitFormatter "Bosses/Alts/1Tarte1Sad.png"
+setMugEntry(0x117, Tarte_Sad_Alt,3,6,3,4)
 
+Tarte_Sad_Flip:
+#incext PortraitFormatter "Bosses/Alts/1TarteSadFlip.png"
+setMugEntry(0x118, Tarte_Sad_Flip,3,6,3,4)
 
+Tarte_Sad_Flip_Alt:
+#incext PortraitFormatter "Bosses/Alts/1Tarte1SadFlip.png"
+setMugEntry(0x119, Tarte_Sad_Flip_Alt,3,6,3,4)
+
+Tarte_Mad:
+#incext PortraitFormatter "Bosses/Alts/1TarteMad.png"
+setMugEntry(0x11A, Tarte_Mad,3,6,3,4)
+
+Tarte_Mad_Alt:
+#incext PortraitFormatter "Bosses/Alts/1Tarte1Mad.png"
+setMugEntry(0x11B, Tarte_Mad_Alt,3,6,3,4)
+
+Tarte_Mad_Flip:
+#incext PortraitFormatter "Bosses/Alts/1TarteMadFlip.png"
+setMugEntry(0x11C, Tarte_Mad_Flip,3,6,3,4)
+
+Tarte_Mad_Flip_Alt:
+#incext PortraitFormatter "Bosses/Alts/1Tarte1MadFlip.png"
+setMugEntry(0x11D, Tarte_Mad_Flip_Alt,3,6,3,4)
 
 
 //Class Cards

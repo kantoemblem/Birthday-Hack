@@ -1,4 +1,4 @@
-//#include "Tilesets/TilesetInstaller.event"
+#include "Tilesets/TilesetInstaller.event"
 #include "Mugs/MugInstaller.event"
 #include "Animations/AnimationReference.event"
 #include "Animations/MasterAnimationInstaller.event"
@@ -9,7 +9,7 @@
 //#include "BattleScreen/BattleScreenInstaller.event"
 
 
-/*
+
 ALIGN 4
 StatScreen:
 #incbin "StatScreen.png.dmp"
@@ -31,4 +31,3 @@ POIN StatScreenPal
 ORG $88644
 POIN StatScreenTsa 
 POP
-*/

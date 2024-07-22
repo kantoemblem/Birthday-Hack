@@ -40,3 +40,9 @@ POP
 #include "GrowthSkills/GrowthSkills.event"
 
 #include "charge_table.event"
+
+
+#include "ZelosSkill/ZelosSkill.lyn.event"
+ALIGN 4
+gZelosSkillID:
+WORD ZelosSkillID

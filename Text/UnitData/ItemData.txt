@@ -28,6 +28,9 @@ Peddler's Pike[X]
 ## MerchantLanceDesc ^
 Nana's trusty companion. Cancels enemy skills.[X]
 
+## LadybladeName
+Ladyblade[X]
+
 
 ## RenewalRingName ^
 Renewal Ring[X]

@@ -50,6 +50,26 @@ _[X]
 ## ThaumaturgeName ^
 Thaumaturge[X]
 
+## TricksterName
+Trickster[X]
+
+## TwilightName ^
+Twilight Kn.[X]
+
+## TwilightDesc
+Swift-bladed knights who deal in[N]
+overwhelmingly powerful strokes.[X]
+
+## OWBName ^
+One Winged Boyo[X]
+
+## OWBDesc
+First you draw a circle... then[N]
+you dot the eyes... draw a great[N]
+black wing and... presto! :D[X]
+
+## SwordDemonName ^
+Sword Demon[X]
 
 
 ## CavalierDesc

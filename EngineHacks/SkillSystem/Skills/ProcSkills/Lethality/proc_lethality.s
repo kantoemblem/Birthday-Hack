@@ -23,30 +23,9 @@ bne End
 
 @if another skill already activated, don't do anything
 
-@check if crit is to be ignored
-mov	r1, #0x6C
-ldrb	r1,[r4,r1]
-mov	r5,#0xFF
-cmp	r1,#0x7F	@I set the value to FF in the battle calculations if crit is to be ignored (skill% based activation)
-bhi	RollRN
-cmp	r1,#0x00	@check if 0 chance
-beq	End
-
-@only activate if crit
-mov r5, #0x64
-mov r1, #0x1
-tst r0, r1
-beq End
-
 RollRN:
-ldr	r0,=#0x80191D0	@call skill getter
-mov	r14,r0
-mov	r0,r4
-.short	0xF800
-mov	r1,#0x6C
-ldrb	r1,[r4,r1]
-sub	r5,r1		@FF or 64 - Lethality Chance = modifier (depending on if crit needed or not)
-lsr	r0,r5		@divide skill by modifier to get our chance (modifier was set in NonGBALethalitySkill)
+mov r1, #0x6C
+ldrh r0, [r4, r1]
 
 mov r1, r4 @skill user
 blh d100Result

@@ -1135,5 +1135,8 @@ ORG SkillIcon(MasteryID)
 ORG SkillIcon(InspiritID)
 #incbin "SkillIcons/Inspirit.dmp"
 
+ORG SkillIcon(ZelosSkillID)
+#incbin "SkillIcons/ZelosSkill.dmp"
+
 ORG SkillIcons+0x8000
 

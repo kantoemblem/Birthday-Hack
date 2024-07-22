@@ -174,7 +174,22 @@ SarahStand:
 #incext Png2Dmp "_Sarah/Stand.png" --lz77
 SarahMove:
 #incext Png2Dmp "_Sarah/Move.png" --lz77
-
+AubreyStand:
+#incext Png2Dmp "_Aubrey/Stand.png" --lz77
+AubreyMove:
+#incext Png2Dmp "_Aubrey/Move.png" --lz77
+ZelosS:
+#incext Png2Dmp "_Zelos/ZelosS.png" --lz77
+ZelosM:
+#incext Png2Dmp "_Zelos/ZelosM.png" --lz77
+DianaStand:
+#incext Png2Dmp "_Diana/TwilightStand.png" --lz77
+DianaMove:
+#incext Png2Dmp "_Diana/TwilightMove.png" --lz77
+KirbyrothStand:
+#incext Png2Dmp "_Kirbyroth/Stand.png" --lz77
+KirbyrothMove:
+#incext Png2Dmp "_Kirbyroth/Move.png" --lz77
 
 
 //➖➖🟪🟪

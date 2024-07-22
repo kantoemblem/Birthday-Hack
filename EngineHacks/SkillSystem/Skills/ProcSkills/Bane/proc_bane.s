@@ -7,7 +7,7 @@
 .endm
 .equ CounterID, SkillTester+4
 .equ CounterMagicID, CounterID+4
-.equ BaneID, CounterMagicID+4
+.equ ObsSkillID, CounterMagicID+4
 .equ d100Result, 0x802a52c
 @ r0 is attacker, r1 is defender, r2 is current buffer, r3 is battle data
 push {r4-r7,lr}
@@ -20,10 +20,15 @@ lsl     r0,r0,#0xD                @ 0802B40C 0340
 lsr     r0,r0,#0xD        @Without damage data                @ 0802B40E 0B40     
 mov r1, #0xC0 @skill flag
 lsl r1, #8 @0xC000
-add r1, #2 @miss
 tst r0, r1
 bne End
 @if another skill already activated, don't do anything
+
+@Check if missed
+ldr r0, [r2]
+mov r1, #2 @miss
+tst r0, r1
+beq End
 
 @check for counter and countermagic, they give problems
 ldr r0, SkillTester
@@ -42,34 +47,19 @@ ldr r1, CounterMagicID
 cmp r0, #0x01
 beq End
 
-@only activate if damage > current enemy hp-1
-ldrb	r5,[r5,#0x13]
-mov	r0,#0x01
-sub	r5,r0
-ldrb    r0,[r7,#0x04]
-cmp	r0,r5
-blt End
-
-ldr	r0,=#0x80191D0	@call skill getter
-mov	r14,r0
-mov	r0,r4
-.short	0xF800
-lsr	r0,#0x01	@divide skill by 2 to get our chance
-
-
-mov r1, r4 @skill user
-blh d100Result
-cmp r0, #1		@check if roll was successful
-bne End
-
 mov r0, r4 @skill user
-ldr r1, BaneID @skill ID
+ldr r1, ObsSkillID @skill ID
 ldr r2, SkillTester
 mov lr, r2
 .short 0xf800
 cmp r0,#1
 bne End
 
+@Unset miss
+ldr r0, [r6]
+mov r1, #2
+bic r0, r1
+str r0, [r6]
 
 @if we proc, set offensive skill flag
 ldr     r2,[r6]    
@@ -83,11 +73,12 @@ and     r0,r2                @ 0802B436 4010
 orr     r0,r1                @ 0802B438 4308     
 str     r0,[r6]                @ 0802B43A 6018  
 
-ldrb	r0, BaneID
+ldrb	r0, ObsSkillID
 strb	r0,[r6,#4]
 
 @if we proc, get enemy HP, subtract 1, and set as damage dealt 
-mov r0,r5
+ldrb r0,[r5,#0x13]
+sub  r0, #0x1
 strb r0,[r7,#4]  
 
 End:
@@ -100,4 +91,4 @@ SkillTester:
 @POIN SkillTester
 @WORD CounterID
 @WORD CounterMagicID
-@WORD BaneID
+@WORD ObsSkillID

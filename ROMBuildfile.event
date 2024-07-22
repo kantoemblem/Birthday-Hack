@@ -34,6 +34,9 @@ PROTECT 0xC00000 //start of anim table?
 	#include "Events/EscapePoints.event"
 	#include "Events/ChapterEventInstaller.event"
 	
+	//Musicz
+	#include "Music/MusicInstaller.event"	
+	
 	//Graphics
 	#include "Graphics/GraphicsInstaller.event"
 	

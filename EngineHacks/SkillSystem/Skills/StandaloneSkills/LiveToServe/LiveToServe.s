@@ -102,6 +102,12 @@ ldr     r0,=#0xFFF80000                @ 0802B434 4804
 and     r0,r3                @ 0802B436 4010     
 orr     r0,r1                @ 0802B438 4308
 str     r0,[r2]
+
+@Apply buff
+ldrb r0,[r4,#0xc]
+blh	0x8019430 @r0 = Unit performing heal
+bl ApplyZanosBuff
+
 @finish up by updating the attacker/defender
 ldrb	r0,[r4, #0xd]
 blh	0x8019430

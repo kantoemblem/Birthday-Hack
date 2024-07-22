@@ -766,7 +766,7 @@
 
 //Bane: Leave the opponent at 1 HP if the attack would kill. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define BaneID 255
+#define BaneID 58
 
 //Barricade: Damage taken is halved after first being struck.
 //By Snakey1
@@ -1068,7 +1068,7 @@
 
 //Summon: Can conjure a phantom soldier to fight alongside you.
 //By Sme
-#define SummonID 58
+#define SummonID 255
 
 //Supply: This unit has access to the convoy.
 //By Sme
@@ -1229,7 +1229,7 @@
 
 //Synchronize: Statuses are also applied to the attacker.
 //By Sme
-#define SynchronizeID 96
+#define SynchronizeID 255
 
 //Bargain: Halves prices in shops.
 //By Sme
@@ -1291,6 +1291,9 @@
 
 //Mutual Trust
 #define ZanosSkillID 154
+
+//Zelos Skill
+#define ZelosSkillID 96
 
 
 //Display-Only Skills

@@ -1129,6 +1129,9 @@ ORG SkillIcon(RosePersonalID)
 ORG SkillIcon(SonuPersonalID)
 #incbin "SkillIcons/LunaAssault.dmp"
 
+ORG SkillIcon(MasteryID)
+#incbin "SkillIcons/Mastery.dmp"
+
 ORG SkillIcon(InspiritID)
 #incbin "SkillIcons/Inspirit.dmp"
 

@@ -52,10 +52,10 @@ locks, and see in darkness.[X]
 Lethality: Instantly kill opponent.[N]
 (Skill/2 % activation)[X]
 
-## SD_Bane
-Bane: Leave the opponent at[N]
-1 HP if the attack would kill.[N]
-(Skill/2 % activation)[X]
+## SD_Bane ^
+Inescapable Darkness: If unit's attack would[N]
+misse on a non-boss enemy, the foe's HP[N]
+is instead reduced to 1.[X]
 
 ## SD_Luna
 Luna: Negates enemy defenses.[N]
@@ -834,10 +834,10 @@ Beastly Fusillade: Gain +1 damage &[N]
 defense for every two squares moved.[N]
 Bonus disappears on enemy phase.[X]
 
-## SD_Infiltrator
-Surrounded: If within 2 spaces[N]
-of two or more enemies, gain +3[N]
-damage and +15% hit.[X]
+## SD_Infiltrator ^
+Polycule Pup-pack: When two or more female[N]
+units are within 2 spaces, gain +2 DMG and[N]
++20 crit, lethality rate is also set to 100%[X]
 
 ## SD_Vanity
 Vanity: Gain +2 Damage and +10 Hit[N]
@@ -1662,9 +1662,9 @@ Super Sonic Speed: Increases damage dealt[N]
 by 1 per Speed greater than opponent.[X]
 
 ## SD_AphiSkill ^
-Harmony: Unit recieves bonuses based on weapon.[N]
-[light]: +5 AS, +15 Avo, +15 Crit.[N]
-[dark]: +5 Prt, +15 Hit, +15 Crit avo.[X]
+Adapt: +4 DMG[axe]/+20 HIT[bow]/+4 AS[sword][N]
++4 PRT[lance]/+20 CRT[anima]/+20 AVO[light][N]
++100 DDG[dark][X]
 
 ## SD_ChromaticTactics ^
 Chromatic Tactics: Boosts stats of allies[N]
@@ -1706,3 +1706,8 @@ Inspirit: Deal +5 Damage to bosses.[X]
 Mutual Trust: When healing an ally,[N]
 also heals self. Gains 20% of the ally's[N]
 recovered HP as def/res until next turn[X]
+
+## SD_ZelosSkill ^
+Magical Mastery: Unit's damage is[N]
+calculated with the lower stat of[N]
+foe's defense resistance[X]

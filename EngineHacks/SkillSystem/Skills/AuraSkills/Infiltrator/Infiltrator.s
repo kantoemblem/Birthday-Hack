@@ -2,6 +2,15 @@
 .thumb
 .equ GetUnitsInRange, SkillTester+4
 .equ InfiltratorID, GetUnitsInRange+4
+
+.equ GetUnit, 0x8019431
+
+.macro blh to, reg
+  ldr    \reg, =\to
+  mov    lr, \reg
+  .short 0xf800
+.endm
+
 push {r4-r7,lr}
 @goes in the battle loop.
 @r0 is the attacker
@@ -23,35 +32,52 @@ CheckSkill:
 ldr r0, GetUnitsInRange
 mov lr, r0
 mov r0, r4 @attacker
-mov r1, #3 @Enemy
+mov r1, #0 @Allies
 mov r2, #2
 .short 0xf800
 cmp r0, #0
 beq Done
 
-mov r2, #0x0
+mov r7, r0
+mov r5, #0x0
+sub r5, #0x1
+mov r6, #0x0
 Loop:
-ldrb r1, [r0, r2]
-cmp  r1, #0x0
+add  r5, #0x1
+ldrb r0, [r7, r5]
+cmp  r0, #0x0
 beq  CheckCount
-add  r2, #0x1
+  blh  GetUnit, r1
+  ldr  r1, [r0]         @r1 = Pointer to character data
+  ldr  r1, [r1, #0x28]  @r1 = Character ability bitfield
+  ldr  r0, [r0, #0x4]   @r0 = Pointer to class data
+  ldr  r0, [r0, #0x28]  @r0 = Character ability bitfield
+  orr  r0, r1           @r0 = combined ability bitfields
+  mov  r1, #0x40
+  lsl  r1, #0x8         @r1 = female unit bit
+  tst  r0, r1
+  beq  Loop
+    add  r6, #0x1
 b Loop
 
 CheckCount:
-cmp r2,#0x2
+cmp r6,#0x2
 blt Done
 
 Next:
 mov r0, #0x5A
 ldrh r3, [r4,r0]
-add r3, #3
+add r3, #2
 strh r3, [r4,r0]
 
-mov r0, #0x60
+mov r0, #0x66
 ldrh r3, [r4,r0]
-add r3, #15
+add r3, #20
 strh r3, [r4,r0]
 
+mov r0, #0x6C
+mov r3, #100
+strh r3, [r4,r0]
 
 Done:
 pop {r4-r7, r15}
