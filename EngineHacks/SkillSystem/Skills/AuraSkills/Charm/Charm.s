@@ -21,8 +21,32 @@ cmp r0, #0
 beq Done
 
 mov r0, r4
-add     r0,#0x5A    @Move to the attacker's damage.
-ldrh    r3,[r0]     @Load the attacker's damage into r3.
+add     r0,#0x5A    @Move to the attackers damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#2    @add 2 damage.
+strh    r3,[r0]     @Store dmg.
+
+mov r0, r4
+add     r0,#0x60    @Move to the attackers damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#10    @add 2 damage.
+strh    r3,[r0]     @Store dmg.
+
+mov r0, r4
+add     r0,#0x60    @Move to the attackers damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#20    @add 2 damage.
+strh    r3,[r0]     @Store dmg.
+
+mov r0, r4
+add     r0,#0x62    @Move to the attackers damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
+add     r3,#20    @add 2 damage.
+strh    r3,[r0]     @Store dmg.
+
+mov r0, r4
+add     r0,#0x5C    @Move to the attackers damage.
+ldrh    r3,[r0]     @Load the attackers damage into r3.
 add     r3,#2    @add 2 damage.
 strh    r3,[r0]     @Store dmg.
 

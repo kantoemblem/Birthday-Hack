@@ -36,6 +36,10 @@ Nana's trusty companion. Cancels enemy skills.[X]
 Ladyblade[X]
 
 
+## FlambergeName
+Flamberge[X]
+
+
 ## RenewalRingName ^
 Renewal Ring[X]
 
