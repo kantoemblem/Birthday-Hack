@@ -95,7 +95,7 @@ SongTable(0x34,song34,0)
 }
 
 {
-SongTable(0xB,song45,0)
+SongTable(0xB,song45,1)
 #include "songs/Event/47Endgame.event"
 }
 

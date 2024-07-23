@@ -18,6 +18,8 @@ ItemIconSlot(0x10,"Sword/27RuneSword.png")
 ItemIconSlot(0x11,"Sword/15Lancereaver.png")
 ItemIconSlot(0xAA,"Sword/22WindSword.png")
 ItemIconSlot(0xB0,"Sword/Iustitae.png")
+ItemIconSlot(0xBD,"Sword/DemonBlade.png")
+ItemIconSlot(0xB7,"Sword/Masamune.png")
 
 //Lances
 ItemIconSlot(0x13,"Lance/41IronLance.png")

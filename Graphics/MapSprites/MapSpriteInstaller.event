@@ -194,6 +194,10 @@ ManaketeStand:
 #incext Png2Dmp "Manakete/Stand.png" --lz77
 ManaketeMove:
 #incext Png2Dmp "Manakete/Move.png" --lz77
+TarteStand:
+#incext Png2Dmp "Tarte/Stand.png" --lz77
+TarteMove:
+#incext Png2Dmp "Tarte/Move.png" --lz77
 
 
 

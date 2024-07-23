@@ -153,3 +153,63 @@ Registered Sex-offender.[X]
 Germaine's sister whom he dotes[N]
 on tirelessly. Confident and playful[N]
 with an air of refinement and elegance.[X]
+
+## BartName
+Bart[X]
+
+## SigurdName
+Sigurd[X]
+
+## TotsName
+Tots[X]
+
+## ZeshinName
+Zeshin[X]
+
+## BarbosaName
+Barbosa[X]
+
+## OrvaldName
+Orvald[X]
+
+## CKName ^
+Crimson Knight[X]
+
+## DianaName
+Diana[X]
+
+## KirbyName
+Kirbyroth[X]
+
+## ZekeName
+Zeke[X]
+
+## AssDesc
+An Assassin in[N]
+Perkus' Employ[X]
+
+## BarbosaDesc
+The leader of an infamous[N]
+band of ancient Elibian bandits.[X]
+
+## OrvaldDesc
+A half-manakete warlord[N]
+cares for naught but fighting.[X]
+
+## CKDesc
+A mysterious vengeance-seeking[N]
+knight clad in blood-red armor.[N]
+Who could it POSSIBLY be???????[X]
+
+## DianaDesc
+A ruthless, graceful general[N]
+of Proxima.[X]
+
+## KirbyDesc
+The One-Winged, Adorable bringer[N]
+of despair[X]
+
+## ZekeDesc
+Zeke Von Genbu, Bringer of Chaos,[N]
+Mostly known as Zeke and often[N]
+addressed as the Zekenator![X]

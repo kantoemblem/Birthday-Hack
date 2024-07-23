@@ -20,7 +20,11 @@ A commander's blade. Eff. [armor][horse][X]
 ## WingSpearName ^
 Wing Spear[X]
 
+## DemonBladeName ^
+Demon Blade[X]
 
+## MasamuneName
+Masamune[X]
 
 ## MerchantLanceName ^
 Peddler's Pike[X]

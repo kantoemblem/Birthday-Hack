@@ -1551,7 +1551,7 @@ a physical weapon against a foe armed[N]
 with magic or vice versa.[X]
 
 ## SD_Dragonskin
-Dragonskin: Halves damage taken.[X]
+Chthonic Guard: Halves damage taken.[X]
 
 ## SD_StunningSmile
 Stunning Smile: If foe is male, inflicts[N]
@@ -1645,7 +1645,7 @@ after attacking but failing[N]
 to harm an enemy.[X]
 
 ## SD_Multiscale
-Hale and Hearty: Take half[N]
+Chthonic...Protection?: Take half[N]
 damage when at full HP.[X]
 
 ## SD_Flank

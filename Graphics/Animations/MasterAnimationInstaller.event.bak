@@ -323,3 +323,15 @@
 	{
 	#include "Tarte/Sword/Sword Installer.event"
 	}
+	{
+	#include "Nak/Attack/Nak Installer.event"
+	}
+	{
+	#include "Nak/Detransform/Nak Installer.event"
+	}
+	{
+	#include "Nak/Transform/Nak Installer.event"
+	}
+	{
+	#include "Nak/Unarmed/Nak Installer.event"
+	}

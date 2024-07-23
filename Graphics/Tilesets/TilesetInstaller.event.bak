@@ -221,4 +221,69 @@
 	ALIGN 4
 	EventPointerTable(0x1a,CastleConfig)
 	EventPointerTable(0x19,CastlePalette)
+	EventPointerTable(0x18,CastleImage)
 	EventPointerTable(0x1C,CastleAnimation)
+	
+	
+//Stronghold
+	ALIGN 4
+	StrongholdConfig:
+	#incext compress "StrongholdConfig.mapchip_config"
+	
+	ALIGN 4
+	StrongholdPalette:
+	#incext Png2Dmp "Stronkhold.png" --palette-only
+	
+	ALIGN 4
+	StrongholdImage:
+	#incext Png2Dmp "Stronkhold.png" --lz77
+	
+	ALIGN 4
+	StrongholdAnim:
+	TilesetAnimation(16,4096,StrongholdAnims1)
+	TilesetAnimation(16,4096,StrongholdAnims2)
+	TilesetAnimation(16,4096,StrongholdAnims3)
+	TilesetAnimation(16,4096,StrongholdAnims4)
+	TilesetAnimation(16,4096,StrongholdAnims5)
+	TilesetAnimation(16,4096,StrongholdAnims6)
+	TilesetAnimation(16,4096,StrongholdAnims7)
+	TilesetAnimation(16,4096,StrongholdAnims8)
+	WORD 0x0 0x0
+	
+	ALIGN 4
+	StrongholdAnims1:
+	#incext Png2Dmp "Strongholdanims/Stronghold000.png"
+
+	ALIGN 4
+	StrongholdAnims2:
+	#incext Png2Dmp "Strongholdanims/Stronghold001.png"
+
+	ALIGN 4
+	StrongholdAnims3:
+	#incext Png2Dmp "Strongholdanims/Stronghold002.png"
+
+	ALIGN 4
+	StrongholdAnims4:
+	#incext Png2Dmp "Strongholdanims/Stronghold003.png"
+
+	ALIGN 4
+	StrongholdAnims5:
+	#incext Png2Dmp "Strongholdanims/Stronghold004.png"
+
+	ALIGN 4
+	StrongholdAnims6:
+	#incext Png2Dmp "Strongholdanims/Stronghold005.png"
+
+	ALIGN 4
+	StrongholdAnims7:
+	#incext Png2Dmp "Strongholdanims/Stronghold006.png"
+
+	ALIGN 4
+	StrongholdAnims8:
+	#incext Png2Dmp "Strongholdanims/Stronghold007.png"
+	
+	ALIGN 4
+	EventPointerTable(0x1a,StrongholdConfig)
+	EventPointerTable(0x19,StrongholdPalette)
+	EventPointerTable(0x18,StrongholdImage)
+	EventPointerTable(0x1C,StrongholdAnim)

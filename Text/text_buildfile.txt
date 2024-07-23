@@ -123,3 +123,8 @@ a skill when used.[X]
 #include "unitinfo_text.txt"
 
 #include "UnitData/UnitDataInstaller.txt"
+
+#include "ChapterText/Story.txt"
+
+#include "ChapterText/Talks.txt"
+

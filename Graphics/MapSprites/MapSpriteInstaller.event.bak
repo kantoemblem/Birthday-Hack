@@ -190,6 +190,11 @@ KirbyrothStand:
 #incext Png2Dmp "_Kirbyroth/Stand.png" --lz77
 KirbyrothMove:
 #incext Png2Dmp "_Kirbyroth/Move.png" --lz77
+ManaketeStand:
+#incext Png2Dmp "Manakete/Stand.png" --lz77
+ManaketeMove:
+#incext Png2Dmp "Manakete/Move.png" --lz77
+
 
 
 //➖➖🟪🟪

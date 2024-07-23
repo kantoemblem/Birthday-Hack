@@ -315,6 +315,9 @@
 	#include "Aubrey/Unarmed/Aubrey Installer.event"
 	}
 	{
+	#include "Aubrey/Bow/Bow Installer.event"
+	}
+	{
 	#include "Kirbyroth/Kirbo Installer.event"
 	}
 	{
