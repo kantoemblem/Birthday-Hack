@@ -233,4 +233,28 @@ POP
   // Save/Suspend Expansion
     MESSAGE "Using EMS Save/Suspend Expansion"
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
+	
+//ModularMiniMugBox
+  ALIGN 4
+  #include "MyPatches/ModularMinimugBox-master/Installers/MMBInstallerVesly.event"
 
+ // Text Engine Rework
+ #include "MyPatches/FE8TextEngineRework/_FE8-Text_Engine_Rework_EA.event"
+	
+ //1 RN
+ #include "MyPatches/1RNMode/Installer.event"
+	
+ //ContinueBattleBGM_20220321
+// #include "MyPatches/ContinueBattleBGM_20220321/PATCH_ContinueBattleBGM_install.txt"
+ #incbin "MyPatches/ContinueBattleBGM_20220321/ContinueBattleBGM.dmp"
+
+PUSH
+ORG 0x71A68
+#incbin "MyPatches/ContinueBattleBGM_20220321/ContinueBattleBGM.dmp"
+POP
+
+//// Melee Magic Sword Fix
+PUSH 
+ORG $18a58
+#incbin "MyPatches/MeleeAndMagicFix_ItemFix20220721/MeleeAndMagicFix_FE8U.dmp" 
+POP

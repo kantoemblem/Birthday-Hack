@@ -50,7 +50,7 @@ SongTable(0x0A,song0D,1)
 
 
 {
-SongTable(0x09,song0A,1)
+SongTable(0x09,song09,1)
 #include "songs/Event/BattleII.event"
 }
 

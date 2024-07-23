@@ -2,6 +2,16 @@
 <map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="30" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
  <tileset firstgid="1" source="Castle.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="25">
+   <properties>
+   <property name="Anims1" value="0x1C"/>
+   <property name="ChapterID" value="0x01"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="0x9"/>
+   <property name="MapID" value="0x8"/>
+   <property name="ObjectType" value="0x18"/>
+   <property name="PaletteID" value="0x19"/>
+   <property name="TileConfig" value="0x1A"/>
+  </properties>
   <data encoding="csv">
 425,490,301,329,219,218,195,196,457,490,721,722,722,219,278,213,218,722,722,489,425,425,490,80,219,218,225,225,457,425,
 461,554,395,265,219,218,195,196,457,458,721,850,722,219,281,246,218,722,786,553,551,425,490,39,219,218,195,196,457,425,

@@ -3,7 +3,7 @@
  <tileset firstgid="1" source="Castle.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="25">
    <properties>
-   <property name="Anims1" value="0x1C"/>
+   <property name="Anims1" value="0x0"/>
    <property name="ChapterID" value="0x01"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="0x9"/>
